@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   animatedItems.forEach((item, index) => {
     item.classList.add("reveal");
-    item.style.transitionDelay = `${Math.min(index * 60, 360)}ms`;
+    item.style.transitionDelay = `${Math.min(index * 50, 300)}ms`;
   });
 
   const observer = new IntersectionObserver(
@@ -40,6 +40,35 @@ document.addEventListener("DOMContentLoaded", () => {
         behavior: "smooth",
         block: "start",
       });
+
+      const nav = document.getElementById("siteNav");
+      nav?.classList.remove("open");
+      document.getElementById("navToggle")?.setAttribute("aria-expanded", "false");
     });
+  });
+
+  const navToggle = document.getElementById("navToggle");
+  const siteNav = document.getElementById("siteNav");
+
+  if (navToggle && siteNav) {
+    navToggle.addEventListener("click", () => {
+      const isOpen = siteNav.classList.toggle("open");
+      navToggle.setAttribute("aria-expanded", String(isOpen));
+    });
+  }
+
+  const themeToggle = document.getElementById("themeToggle");
+  const savedTheme = localStorage.getItem("theme");
+
+  if (savedTheme === "dark") {
+    document.body.classList.add("dark");
+    if (themeToggle) themeToggle.textContent = "☀️";
+  }
+
+  themeToggle?.addEventListener("click", () => {
+    document.body.classList.toggle("dark");
+    const isDark = document.body.classList.contains("dark");
+    localStorage.setItem("theme", isDark ? "dark" : "light");
+    themeToggle.textContent = isDark ? "☀️" : "🌙";
   });
 });
