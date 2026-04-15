@@ -477,5 +477,201 @@
           </article>
         </div>
       </div>
-  </section>
-  
+    </section>
+
+    <section class="section" id="awards">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-label">Awards</span>
+          <h2>Recognition and academic merit</h2>
+          <p>
+            A concise awards section helps your website look more complete and admissions-ready.
+          </p>
+        </div>
+
+        <div class="awards-grid">
+          <article class="award-card">
+            <h3>Merit-based Undergraduate Scholarship</h3>
+            <p>Rajshahi University of Engineering & Technology (RUET), Bangladesh</p>
+            <span>2016</span>
+          </article>
+
+          <article class="award-card">
+            <h3>HSC Merit Scholarship</h3>
+            <p>Board of Intermediate & Secondary Education, Bangladesh</p>
+            <span>2012</span>
+          </article>
+
+          <article class="award-card">
+            <h3>Top 5% Graduate</h3>
+            <p>BSc in Glass & Ceramic Engineering, RUET</p>
+            <span>Academic distinction</span>
+          </article>
+
+          <article class="award-card">
+            <h3>Published Research Author</h3>
+            <p>Multiple peer-reviewed outputs in materials science and engineering</p>
+            <span>Research output</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section alt-section" id="contact">
+      <div class="container contact-layout">
+        <div class="contact-left">
+          <div class="section-head left">
+            <span class="section-label">Contact</span>
+            <h2>Open to research collaboration and academic opportunities</h2>
+            <p>
+              I am interested in research collaborations, higher studies, and opportunities in advanced materials,
+              ceramics, thin films, and functional oxide systems.
+            </p>
+          </div>
+
+          <div class="contact-actions">
+            <a href="mailto:khalidhasan.ruet@gmail.com" class="btn btn-primary">Email Me</a>
+            <a href="Hasan_CV.pdf" class="btn btn-secondary" download>Download CV</a>
+          </div>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-item">
+            <h3>Email</h3>
+            <p><a href="mailto:khalidhasan.ruet@gmail.com">khalidhasan.ruet@gmail.com</a></p>
+          </div>
+
+          <div class="contact-item">
+            <h3>Address</h3>
+            <p>27/4, North Pirerbagh, Dhaka-1216, Bangladesh</p>
+          </div>
+
+          <div class="contact-item">
+            <h3>ORCID</h3>
+            <p><a href="https://orcid.org/0000-0002-5646-9129" target="_blank" rel="noopener noreferrer">0000-0002-5646-9129</a></p>
+          </div>
+
+          <div class="contact-item">
+            <h3>LinkedIn</h3>
+            <p><a href="https://bd.linkedin.com/in/khalid-hasan-9288a3165" target="_blank" rel="noopener noreferrer">Khalid Hasan</a></p>
+          </div>
+
+          <div class="contact-item">
+            <h3>Google Scholar</h3>
+            <p><a href="#" target="_blank" rel="noopener noreferrer">Add your profile link</a></p>
+          </div>
+
+          <div class="contact-item">
+            <h3>Research Goal</h3>
+            <p>PhD pathway in advanced materials, energy materials, and ceramic additive manufacturing</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>© 2026 Md Khalid Hasan. All rights reserved.</p>
+      <p>Designed as a premium academic research portfolio.</p>
+    </div>
+  </footer>
+
+  <script>
+    const menuToggle = document.getElementById("menuToggle");
+    const navMenu = document.getElementById("navMenu");
+    const themeToggle = document.getElementById("themeToggle");
+    const themeIcon = document.getElementById("themeIcon");
+
+    menuToggle.addEventListener("click", () => {
+      navMenu.classList.toggle("active");
+    });
+
+    document.querySelectorAll(".nav-menu a").forEach(link => {
+      link.addEventListener("click", () => {
+        navMenu.classList.remove("active");
+      });
+    });
+
+    // Theme toggle
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme === "dark") {
+      document.body.classList.add("dark-mode");
+      themeIcon.textContent = "☀";
+    }
+
+    themeToggle.addEventListener("click", () => {
+      document.body.classList.toggle("dark-mode");
+      const isDark = document.body.classList.contains("dark-mode");
+      localStorage.setItem("theme", isDark ? "dark" : "light");
+      themeIcon.textContent = isDark ? "☀" : "☾";
+    });
+
+    // Animated counters
+    const counters = document.querySelectorAll(".counter");
+    let hasAnimated = false;
+
+    function runCounters() {
+      if (hasAnimated) return;
+      counters.forEach(counter => {
+        const target = +counter.dataset.target;
+        let current = 0;
+        const step = Math.max(1, Math.ceil(target / 50));
+
+        const timer = setInterval(() => {
+          current += step;
+          if (current >= target) {
+            counter.textContent = target;
+            clearInterval(timer);
+          } else {
+            counter.textContent = current;
+          }
+        }, 30);
+      });
+      hasAnimated = true;
+    }
+
+    const metricsObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) runCounters();
+      });
+    }, { threshold: 0.35 });
+
+    const metricsSection = document.querySelector(".hero-metrics");
+    if (metricsSection) metricsObserver.observe(metricsSection);
+
+    // Visitor Counter using CountAPI
+    fetch("https://api.countapi.xyz/hit/khalidhasan-ruet-portfolio/visits")
+      .then(res => res.json())
+      .then(data => {
+        const counter = document.getElementById("visitor-count");
+        let current = 0;
+        const target = data.value;
+        const increment = Math.max(1, Math.ceil(target / 60));
+
+        const animate = () => {
+          current += increment;
+          if (current >= target) {
+            counter.textContent = target;
+          } else {
+            counter.textContent = current;
+            requestAnimationFrame(animate);
+          }
+        };
+        animate();
+      })
+      .catch(() => {
+        document.getElementById("visitor-count").textContent = "—";
+      });
+
+    // Simulated live visitors
+    function updateLiveUsers() {
+      const base = Math.floor(Math.random() * 5) + 2;
+      const fluctuation = Math.floor(Math.random() * 3);
+      document.getElementById("live-users").textContent = base + fluctuation;
+    }
+    updateLiveUsers();
+    setInterval(updateLiveUsers, 5000);
+  </script>
+</body>
+</html>
