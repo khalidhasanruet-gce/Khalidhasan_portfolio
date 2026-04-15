@@ -3,371 +3,661 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Md Khalid Hasan | Materials Science Research Portfolio</title>
+  <title>Md Khalid Hasan | Elite Materials Science Research Portfolio</title>
 
   <meta
     name="description"
-    content="Official research portfolio of Md Khalid Hasan, focused on ceramics, functional oxides, thin films, additive manufacturing, and materials characterization."
+    content="Official research portfolio of Md Khalid Hasan, materials science researcher focused on functional ceramics, thin films, functional oxides, additive manufacturing, and advanced characterization."
   />
   <meta
     name="keywords"
-    content="Md Khalid Hasan, materials science, ceramics, thin films, functional oxides, additive manufacturing, research portfolio, PhD application"
+    content="Md Khalid Hasan, Materials Science, Ceramics, Functional Oxides, Thin Films, Additive Manufacturing, XRD, Thermal Analysis, Research Portfolio"
   />
   <meta name="author" content="Md Khalid Hasan" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
 
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div class="bg-orb orb-1"></div>
+  <div class="bg-orb orb-2"></div>
+  <div class="bg-orb orb-3"></div>
 
   <header class="site-header">
     <div class="container nav-wrap">
       <a href="#home" class="brand">
-        <span class="brand-dot"></span>
-        <span class="brand-text">Md Khalid Hasan</span>
+        <span class="brand-mark">KH</span>
+        <div class="brand-text">
+          <strong>Md Khalid Hasan</strong>
+          <small>Materials Science Researcher</small>
+        </div>
       </a>
 
-      <nav class="site-nav">
+      <nav class="nav-menu" id="navMenu">
         <a href="#about">About</a>
         <a href="#research">Research</a>
         <a href="#projects">Projects</a>
+        <a href="#timeline">Timeline</a>
         <a href="#publications">Publications</a>
         <a href="#skills">Skills</a>
+        <a href="#awards">Awards</a>
         <a href="#contact">Contact</a>
       </nav>
+
+      <div class="nav-right">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+          <span class="theme-icon">☾</span>
+        </button>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
     </div>
   </header>
 
-  <main>
-    <!-- HERO -->
-    <section id="home" class="hero">
-      <div class="container hero-grid">
-        <div class="hero-content">
-          <p class="hero-kicker">Materials Science Research Portfolio</p>
+  <section class="hero" id="home">
+    <div class="container hero-grid">
+      <div class="hero-left">
+        <div class="hero-badge fade-up">
+          <span></span>
+          Research Portfolio
+        </div>
 
-          <h1>Md Khalid Hasan</h1>
+        <h1 class="fade-up delay-1">
+          Md Khalid Hasan
+          <span>Materials Science Researcher</span>
+        </h1>
 
-          <p class="hero-subtitle">
-            Researcher in ceramics, functional oxides, thin films,
-            additive manufacturing, and advanced materials characterization.
-          </p>
+        <p class="hero-text fade-up delay-2">
+          Research-oriented materials science graduate with expertise in
+          <strong>ceramic materials, thin films, and functional oxides</strong>.
+          Experienced in <strong>advanced characterization</strong>,
+          <strong>thermal analysis</strong>, <strong>microstructural evaluation</strong>,
+          and <strong>process optimization</strong>, with a long-term goal of pursuing doctoral research.
+        </p>
 
-          <p class="hero-summary">
-            I am a materials science researcher with a strong background in ceramic materials,
-            oxide systems, thin films, and structure–property relationships. My long-term goal is
-            to contribute to high-impact research in advanced materials and pursue doctoral studies
-            in materials science and engineering.
-          </p>
+        <div class="hero-actions fade-up delay-3">
+          <a href="#publications" class="btn btn-primary">View Publications</a>
+          <a href="Hasan_CV.pdf" class="btn btn-secondary" download>Download CV</a>
+        </div>
 
-          <div class="hero-actions">
-            <a href="#projects" class="btn btn-dark">Explore Projects</a>
-            <a href="#publications" class="btn btn-light">View Publications</a>
+        <div class="hero-metrics fade-up delay-4">
+          <div class="metric-card">
+            <h3 class="counter" data-target="5">0</h3>
+            <p>Peer-reviewed publications</p>
           </div>
-
-          <div class="hero-tabs">
-            <a href="#about" class="tab-chip">About Me</a>
-            <a href="#research" class="tab-chip">Research Interests</a>
-            <a href="#projects" class="tab-chip">Selected Projects</a>
-            <a href="#publications" class="tab-chip">Publications</a>
+          <div class="metric-card">
+            <h3 class="counter" data-target="5">0</h3>
+            <p>Top percent in class</p>
           </div>
-        </div>
-
-        <aside class="hero-card">
-          <div class="hero-card-inner">
-            <p class="card-mini-title">Research Focus</p>
-            <ul>
-              <li>Advanced Ceramics</li>
-              <li>Functional Oxides</li>
-              <li>Thin Film Materials</li>
-              <li>Additive Manufacturing of Ceramics</li>
-              <li>Structural, Optical & Electrical Characterization</li>
-            </ul>
-          </div>
-        </aside>
-      </div>
-    </section>
-
-    <!-- ABOUT -->
-    <section id="about" class="section">
-      <div class="container">
-        <div class="section-heading">
-          <p class="section-kicker">About</p>
-          <h2>Academic Profile</h2>
-          <p class="section-lead">
-            A research-oriented materials science graduate with experience in ceramics,
-            oxide materials, thin films, and advanced characterization techniques.
-          </p>
-        </div>
-
-        <div class="feature-grid three-col">
-          <article class="info-card">
-            <h3>Academic Background</h3>
-            <p>
-              Graduated in Glass and Ceramics Engineering with strong interest in
-              structure–property relationships of advanced ceramic and oxide systems.
-            </p>
-          </article>
-
-          <article class="info-card">
-            <h3>Current Direction</h3>
-            <p>
-              Expanding research interests toward additive manufacturing of ceramics,
-              especially FDM-based fabrication, process optimization, and advanced characterization.
-            </p>
-          </article>
-
-          <article class="info-card">
-            <h3>Career Goal</h3>
-            <p>
-              To pursue a PhD and contribute to innovative materials research for
-              energy, electronic, and next-generation engineering applications.
-            </p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- RESEARCH -->
-    <section id="research" class="section soft-section">
-      <div class="container">
-        <div class="section-heading">
-          <p class="section-kicker">Research</p>
-          <h2>Research Interests</h2>
-        </div>
-
-        <div class="feature-grid three-col">
-          <article class="info-card">
-            <h3>Advanced Ceramics</h3>
-            <p>
-              Processing, microstructure control, dielectric behavior, and engineering
-              applications of structural and functional ceramic materials.
-            </p>
-          </article>
-
-          <article class="info-card">
-            <h3>Functional Oxides</h3>
-            <p>
-              Multiferroic, dielectric, and semiconducting oxide systems with emphasis on
-              structure–property correlation.
-            </p>
-          </article>
-
-          <article class="info-card">
-            <h3>Thin Films</h3>
-            <p>
-              Fabrication and characterization of oxide thin films for optical, sensing,
-              and electronic applications.
-            </p>
-          </article>
-
-          <article class="info-card">
-            <h3>Additive Manufacturing</h3>
-            <p>
-              FDM-based ceramic printing, filament development, debinding, sintering,
-              and process optimization for advanced ceramic components.
-            </p>
-          </article>
-
-          <article class="info-card">
-            <h3>Materials Characterization</h3>
-            <p>
-              XRD, SEM, UV-Vis, Raman, TGA/DSC, dielectric analysis, and impedance spectroscopy.
-            </p>
-          </article>
-
-          <article class="info-card">
-            <h3>Energy & Electronic Materials</h3>
-            <p>
-              Materials for capacitors, sensors, coatings, insulating components,
-              and future device-oriented applications.
-            </p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- PROJECTS -->
-    <section id="projects" class="section">
-      <div class="container">
-        <div class="section-heading">
-          <p class="section-kicker">Projects</p>
-          <h2>Selected Research Projects</h2>
-          <p class="section-lead">
-            A focused selection of research work on advanced ceramics,
-            functional oxides, and thin-film materials.
-          </p>
-        </div>
-
-        <div class="project-stack">
-          <article class="project-panel">
-            <div class="project-head">
-              <span class="project-tag">Multiferroic Ceramics</span>
-              <h3>Bismuth Ferrite (BiFeO₃) Ceramics</h3>
-            </div>
-
-            <p>
-              Investigated the synthesis and characterization of BiFeO₃ ceramics using the
-              solid-state route, with emphasis on phase formation, microstructure evolution,
-              and electrical/dielectric performance in multifunctional oxide systems.
-            </p>
-
-            <div class="project-points">
-              <span>Phase purity</span>
-              <span>Grain morphology</span>
-              <span>Dielectric behavior</span>
-              <span>Perovskite oxide systems</span>
-            </div>
-          </article>
-
-          <article class="project-panel">
-            <div class="project-head">
-              <span class="project-tag">Thin Films</span>
-              <h3>Zinc Oxide (ZnO) Thin Films</h3>
-            </div>
-
-            <p>
-              Worked on fabrication and characterization of ZnO thin films for optoelectronic
-              applications, focusing on structural quality, optical transparency,
-              and surface morphology.
-            </p>
-
-            <div class="project-points">
-              <span>Optical transparency</span>
-              <span>Crystallinity</span>
-              <span>Band behavior</span>
-              <span>Surface uniformity</span>
-            </div>
-          </article>
-
-          <article class="project-panel">
-            <div class="project-head">
-              <span class="project-tag">High Dielectric Ceramics</span>
-              <h3>Calcium Copper Titanate (CCTO) Ceramics</h3>
-            </div>
-
-            <p>
-              Studied the dielectric and microstructural behavior of CCTO ceramics with
-              emphasis on grain boundary effects, electrical response, and giant dielectric properties.
-            </p>
-
-            <div class="project-points">
-              <span>Dielectric response</span>
-              <span>Impedance behavior</span>
-              <span>Microstructure correlation</span>
-              <span>Functional oxide ceramics</span>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- PUBLICATIONS -->
-    <section id="publications" class="section soft-section">
-      <div class="container">
-        <div class="section-heading">
-          <p class="section-kicker">Publications</p>
-          <h2>Publications & Academic Work</h2>
-          <p class="section-lead">
-            Showcase your journal papers, conference papers, thesis work, and ongoing manuscripts.
-          </p>
-        </div>
-
-        <div class="publication-grid">
-          <article class="publication-card">
-            <span class="pub-badge">Journal Article</span>
-            <h3>Publication Title 1</h3>
-            <p>Author 1, <strong>Md Khalid Hasan</strong>, Author 3. Journal Name, Year.</p>
-            <a href="#">View Publication</a>
-          </article>
-
-          <article class="publication-card">
-            <span class="pub-badge">Journal Article</span>
-            <h3>Publication Title 2</h3>
-            <p>Author 1, <strong>Md Khalid Hasan</strong>, Author 3. Journal Name, Year.</p>
-            <a href="#">View Publication</a>
-          </article>
-
-          <article class="publication-card">
-            <span class="pub-badge">Thesis / Manuscript</span>
-            <h3>Thesis / Dissertation / Ongoing Manuscript</h3>
-            <p>Add thesis title, short description, or under-review manuscript information here.</p>
-            <a href="#">View Details</a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- SKILLS -->
-    <section id="skills" class="section">
-      <div class="container">
-        <div class="section-heading">
-          <p class="section-kicker">Skills</p>
-          <h2>Technical Skills</h2>
-        </div>
-
-        <div class="feature-grid two-col">
-          <article class="info-card">
-            <h3>Characterization</h3>
-            <p>XRD, SEM, UV-Vis, dielectric analysis, impedance spectroscopy, Raman, TGA, DSC</p>
-          </article>
-
-          <article class="info-card">
-            <h3>Materials Processing</h3>
-            <p>Ceramic synthesis, powder processing, solid-state reaction, sintering, thin-film preparation</p>
-          </article>
-
-          <article class="info-card">
-            <h3>Research & Analysis</h3>
-            <p>Literature review, data interpretation, scientific writing, presentation, research design</p>
-          </article>
-
-          <article class="info-card">
-            <h3>Software & Tools</h3>
-            <p>OriginPro, MS Office, scientific plotting, academic documentation, data handling</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="section contact-section">
-      <div class="container">
-        <div class="section-heading">
-          <p class="section-kicker">Contact</p>
-          <h2>Get In Touch</h2>
-          <p class="section-lead">
-            Open to research collaboration, PhD opportunities, academic networking,
-            and materials science discussions.
-          </p>
-        </div>
-
-        <div class="contact-card-large">
-          <div class="contact-item">
-            <span>Email</span>
-            <strong>your.email@example.com</strong>
-          </div>
-          <div class="contact-item">
-            <span>LinkedIn</span>
-            <strong>linkedin.com/in/your-profile</strong>
-          </div>
-          <div class="contact-item">
-            <span>Google Scholar / ResearchGate</span>
-            <strong>Add your academic profile links here</strong>
+          <div class="metric-card">
+            <h3 class="counter" data-target="2022">0</h3>
+            <p>Started current R&D role</p>
           </div>
         </div>
       </div>
-    </section>
-  </main>
+
+      <div class="hero-right fade-up delay-2">
+        <div class="profile-panel">
+          <div class="photo-wrap elite-frame">
+            <img src="profile-photo.png" alt="Md Khalid Hasan" class="profile-photo" />
+          </div>
+
+          <div class="profile-content">
+            <h2>Md Khalid Hasan</h2>
+            <p class="profile-role">Materials Science Researcher | R&D Engineer</p>
+
+            <div class="profile-tags">
+              <span>Functional Ceramics</span>
+              <span>Thin Films</span>
+              <span>Functional Oxides</span>
+              <span>Additive Manufacturing</span>
+              <span>XRD</span>
+              <span>Thermal Analysis</span>
+            </div>
+
+            <div class="mini-info">
+              <div>
+                <strong>Current Role</strong>
+                <p>R&D Engineer, Abul Khair Ceramic Industries Limited</p>
+              </div>
+              <div>
+                <strong>Education</strong>
+                <p>BSc in Glass & Ceramic Engineering, RUET</p>
+              </div>
+              <div>
+                <strong>Academic Standing</strong>
+                <p>CGPA 3.70 / 4.00 | Top 5%</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-label">About Me</span>
+        <h2>A research profile built on materials, microstructure, and performance</h2>
+        <p>
+          My research journey combines functional ceramic systems, advanced characterization,
+          and application-oriented materials development. I work at the intersection of
+          structure, processing, and performance to understand how materials can be optimized
+          for meaningful scientific and industrial use.
+        </p>
+      </div>
+
+      <div class="about-grid">
+        <div class="glass-card about-card">
+          <h3>Research Identity</h3>
+          <p>
+            Research-oriented materials science graduate with expertise in ceramic materials,
+            thin films, and functional oxides, supported by peer-reviewed publications and
+            applied industry experience.
+          </p>
+        </div>
+
+        <div class="glass-card about-card">
+          <h3>Current Work</h3>
+          <p>
+            Currently working in ceramic process optimization and material performance improvement,
+            with hands-on involvement in characterization, root cause analysis, and raw material utilization.
+          </p>
+        </div>
+
+        <div class="glass-card about-card">
+          <h3>Future Direction</h3>
+          <p>
+            My long-term goal is doctoral research in advanced materials, especially energy materials,
+            nanotechnology, sustainable materials, and ceramic additive manufacturing.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt-section" id="research">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-label">Research Interests</span>
+        <h2>Core scientific interests</h2>
+        <p>
+          My research interests combine functional materials, advanced processing, and multi-technique characterization.
+        </p>
+      </div>
+
+      <div class="interest-grid">
+        <div class="interest-card">
+          <div class="interest-icon">01</div>
+          <h3>Functional Ceramic & Oxide Materials</h3>
+          <p>Design, synthesis, and property optimization of multifunctional ceramic and oxide systems.</p>
+        </div>
+
+        <div class="interest-card">
+          <div class="interest-icon">02</div>
+          <h3>Energy Materials & Sustainable Technologies</h3>
+          <p>Materials development for performance, sustainability, and future engineering applications.</p>
+        </div>
+
+        <div class="interest-card">
+          <div class="interest-icon">03</div>
+          <h3>Nanomaterials & Thin Films</h3>
+          <p>Thin film processing, surface morphology, optical behavior, and composition tuning.</p>
+        </div>
+
+        <div class="interest-card">
+          <div class="interest-icon">04</div>
+          <h3>Additive Manufacturing</h3>
+          <p>Emerging interest in ceramic additive manufacturing and FDM-based fabrication routes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-label">Selected Research Projects</span>
+        <h2>Research presented with stronger depth and clarity</h2>
+        <p>
+          These projects reflect your strongest materials science themes from thesis, publications, and industry work.
+        </p>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card featured">
+          <div class="project-top">
+            <span class="project-chip">Thesis</span>
+            <span class="project-chip">BiFeO₃</span>
+          </div>
+          <h3>Ba and Mo Co-doped BiFeO₃ Ceramics</h3>
+          <p class="project-summary">
+            Bachelor’s thesis focused on the influence of Ba and Mo co-doping on the structural,
+            electrical, magnetic, and optical properties of BiFeO₃ ceramics.
+          </p>
+          <ul>
+            <li>Investigated phase transition using XRD and Rietveld refinement</li>
+            <li>Studied structure-property relationships</li>
+            <li>Analyzed electrical, magnetic, and optical behavior</li>
+          </ul>
+        </article>
+
+        <article class="project-card">
+          <div class="project-top">
+            <span class="project-chip">Thin Films</span>
+            <span class="project-chip">ZnO</span>
+          </div>
+          <h3>Compositionally Complex ZnO Thin Films</h3>
+          <p class="project-summary">
+            Research on multi-doped and transition-metal-doped ZnO thin films with emphasis on
+            structural, morphological, optical, and magnetic properties.
+          </p>
+          <ul>
+            <li>Spray-deposited thin film development</li>
+            <li>Band gap and magnetism enhancement studies</li>
+            <li>Surface and morphology-related property investigation</li>
+          </ul>
+        </article>
+
+        <article class="project-card">
+          <div class="project-top">
+            <span class="project-chip">Dielectrics</span>
+            <span class="project-chip">CCTO</span>
+          </div>
+          <h3>Nb and Zr Co-doped CCTO Ceramics</h3>
+          <p class="project-summary">
+            Investigation of structural, morphological, and dielectric properties of
+            CaCu₃Ti₄O₁₂ ceramics through co-doping strategies.
+          </p>
+          <ul>
+            <li>Focused on dielectric response</li>
+            <li>Microstructure-property understanding</li>
+            <li>Relevant to capacitor and electronic material systems</li>
+          </ul>
+        </article>
+
+        <article class="project-card">
+          <div class="project-top">
+            <span class="project-chip">Industry</span>
+            <span class="project-chip">R&D</span>
+          </div>
+          <h3>Ceramic Process Optimization & Product Performance</h3>
+          <p class="project-summary">
+            Industrial R&D work centered on material efficiency, process optimization,
+            defect analysis, and quality improvement in ceramic manufacturing.
+          </p>
+          <ul>
+            <li>XRF and dilatometer-based analysis</li>
+            <li>Raw material utilization improvement</li>
+            <li>Root cause analysis for product defect reduction</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt-section" id="timeline">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-label">Academic & Professional Timeline</span>
+        <h2>A clear journey from education to research and industry</h2>
+        <p>
+          Your progression shows both academic depth and practical materials engineering experience.
+        </p>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2012 – 2014</span>
+            <h3>Higher Secondary Certificate</h3>
+            <p>Notre Dame College, Dhaka, Bangladesh</p>
+            <small>GPA: 5.00 / 5.00</small>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2015 – 2019</span>
+            <h3>BSc in Glass & Ceramic Engineering</h3>
+            <p>Rajshahi University of Engineering & Technology (RUET)</p>
+            <small>CGPA: 3.70 / 4.00 | Top 5%</small>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2018 – 2022</span>
+            <h3>Research Assistant</h3>
+            <p>Semiconductor Lab, Glass & Ceramic Engineering, RUET</p>
+            <small>Experimental research, characterization, analysis, and documentation</small>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2022 – Present</span>
+            <h3>R&D Engineer</h3>
+            <p>Abul Khair Ceramic Industries Limited, Dhaka, Bangladesh</p>
+            <small>Process optimization, quality assurance, waste reduction, raw material improvement</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="publications">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-label">Publications</span>
+        <h2>Peer-reviewed research outputs with direct article access</h2>
+        <p>
+          This final version includes real article links where available and a clean card system for quick academic browsing.
+        </p>
+      </div>
+
+      <div class="pub-quick-links">
+        <a class="quick-link" href="https://orcid.org/0000-0002-5646-9129" target="_blank" rel="noopener noreferrer">ORCID</a>
+        <a class="quick-link" href="https://bd.linkedin.com/in/khalid-hasan-9288a3165" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a class="quick-link" href="#contact">Google Scholar</a>
+      </div>
+
+      <div class="publication-grid real-pubs">
+        <article class="publication-card real">
+          <div class="pub-top">
+            <span class="pub-badge journal">Results in Materials</span>
+            <span class="pub-year">2022</span>
+          </div>
+          <h3>Synthesis of spray deposited transition metals doped (Cr, Mn, Fe, Ni, and Cu) compositionally complex ZnO thin films with enhanced band gap and magnetism</h3>
+          <p class="pub-authors">Al Hassan, M. R., Islam, M. A., Salam, K., Amin, K. F., & Hasan, M. K.</p>
+          <div class="pub-links">
+            <a href="https://www.sciencedirect.com/science/article/pii/S2590048X22000115" target="_blank" rel="noopener noreferrer">Article</a>
+            <a href="https://doi.org/10.1016/j.rinma.2022.100263" target="_blank" rel="noopener noreferrer">DOI</a>
+          </div>
+        </article>
+
+        <article class="publication-card real">
+          <div class="pub-top">
+            <span class="pub-badge journal">American Journal of Nanosciences</span>
+            <span class="pub-year">2021</span>
+          </div>
+          <h3>Structural, morphological and optical properties of spray deposited multi-doped (Ba, Sr, Mn, Fe and Ni) compositionally complex ZnO thin films</h3>
+          <p class="pub-authors">Al Hassan, M. R., Sen, A., Hasan, M. K., & Matin, M. A.</p>
+          <div class="pub-links">
+            <a href="https://www.sciencepublishinggroup.com/article/10.11648/j.ajn.20210701.12" target="_blank" rel="noopener noreferrer">Article</a>
+            <a href="https://doi.org/10.11648/j.ajn.20210701.12" target="_blank" rel="noopener noreferrer">DOI</a>
+          </div>
+        </article>
+
+        <article class="publication-card real">
+          <div class="pub-top">
+            <span class="pub-badge conference">IOP Conference Series</span>
+            <span class="pub-year">2021</span>
+          </div>
+          <h3>Influence of Nb and Zr co-doping on the structural, morphological and dielectric properties of CaCu₃Ti₄O₁₂ ceramics</h3>
+          <p class="pub-authors">Hasan, M. K., Shant, S. H., Islam, M. Z., & Haque, M. E.</p>
+          <div class="pub-links">
+            <a href="https://scholar.google.com/scholar?q=Influence+of+Nb+and+Zr+co-doping+on+the+structural%2C+morphological+and+dielectric+properties+of+CaCu3Ti4O12+ceramics" target="_blank" rel="noopener noreferrer">Scholar Search</a>
+          </div>
+        </article>
+
+        <article class="publication-card real">
+          <div class="pub-top">
+            <span class="pub-badge journal">J. Mater. Sci.: Mater. Electronics</span>
+            <span class="pub-year">2020</span>
+          </div>
+          <h3>Structural, optical, and magnetic properties of compositionally complex bismuth ferrite (BiFeO₃)</h3>
+          <p class="pub-authors">Sen, A., Hasan, M. K., Munna, A. H., Roy, D. J., Hassan, M. R. A., & Gulshan, F.</p>
+          <div class="pub-links">
+            <a href="https://link.springer.com/article/10.1007/s10854-020-04497-y" target="_blank" rel="noopener noreferrer">Article</a>
+            <a href="https://doi.org/10.1007/s10854-020-04497-y" target="_blank" rel="noopener noreferrer">DOI</a>
+          </div>
+        </article>
+
+        <article class="publication-card real">
+          <div class="pub-top">
+            <span class="pub-badge journal">Materials Research Express</span>
+            <span class="pub-year">2020</span>
+          </div>
+          <h3>Influence of Ba and Mo co-doping on the structural, electrical, magnetic and optical properties of BiFeO₃ ceramics</h3>
+          <p class="pub-authors">Sen, A., Hasan, M. K., Islam, Z., Hassan, M. R. A., Zaman, T., Matin, M. A., & Gulshan, F.</p>
+          <div class="pub-links">
+            <a href="https://doaj.org/article/3f150d185cea460698ca8d13fcedb068" target="_blank" rel="noopener noreferrer">Record</a>
+            <a href="https://scholar.google.com/scholar?q=Influence+of+Ba+and+Mo+co-doping+on+the+structural%2C+electrical%2C+magnetic+and+optical+properties+of+BiFeO3+ceramics" target="_blank" rel="noopener noreferrer">Scholar Search</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt-section" id="skills">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-label">Technical Skills</span>
+        <h2>Methods, software, and analytical tools</h2>
+        <p>
+          A strong academic site should make your laboratory and analysis capability visible immediately.
+        </p>
+      </div>
+
+      <div class="skills-wrap">
+        <div class="skill-box">
+          <h3>Characterization</h3>
+          <div class="skill-tags">
+            <span>XRD</span>
+            <span>Thermal Analysis</span>
+            <span>Microstructural Analysis</span>
+            <span>XRF</span>
+            <span>Dilatometer</span>
+          </div>
+        </div>
+
+        <div class="skill-box">
+          <h3>Software</h3>
+          <div class="skill-tags">
+            <span>FullProf Suite</span>
+            <span>HighScore Plus</span>
+            <span>ImageJ</span>
+            <span>OriginPro</span>
+            <span>Microsoft Office</span>
+            <span>AutoCAD</span>
+          </div>
+        </div>
+
+        <div class="skill-box">
+          <h3>Research Workflows</h3>
+          <div class="skill-tags">
+            <span>Scientific Writing</span>
+            <span>Literature Review</span>
+            <span>Experimental Design</span>
+            <span>Proposal Development</span>
+            <span>Data Interpretation</span>
+            <span>C++</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="awards">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-label">Scholarships & Awards</span>
+        <h2>Recognition and academic merit</h2>
+        <p>
+          These distinctions reinforce the academic strength of your profile.
+        </p>
+      </div>
+
+      <div class="awards-grid">
+        <div class="award-card">
+          <h3>Merit-based Undergraduate Scholarship</h3>
+          <p>Rajshahi University of Engineering & Technology (RUET), Bangladesh</p>
+          <span>2016</span>
+        </div>
+
+        <div class="award-card">
+          <h3>HSC Merit Scholarship</h3>
+          <p>Board of Intermediate & Secondary Education, Bangladesh</p>
+          <span>2012</span>
+        </div>
+
+        <div class="award-card">
+          <h3>Top 5% Graduate</h3>
+          <p>BSc in Glass & Ceramic Engineering, RUET</p>
+          <span>Academic distinction</span>
+        </div>
+
+        <div class="award-card">
+          <h3>Multiple Peer-reviewed Publications</h3>
+          <p>Published author in materials science and engineering journals</p>
+          <span>Research output</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section contact-section alt-section" id="contact">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-label">Contact</span>
+        <h2>Connect for research, collaboration, or academic opportunities</h2>
+        <p>
+          Interested in higher studies, research collaboration, and materials science opportunities.
+        </p>
+      </div>
+
+      <div class="contact-card">
+        <div class="contact-item">
+          <h3>Email</h3>
+          <p><a href="mailto:khalidhasan.ruet@gmail.com">khalidhasan.ruet@gmail.com</a></p>
+        </div>
+
+        <div class="contact-item">
+          <h3>Address</h3>
+          <p>27/4, North Pirerbagh, Dhaka-1216, Bangladesh</p>
+        </div>
+
+        <div class="contact-item">
+          <h3>ORCID</h3>
+          <p><a href="https://orcid.org/0000-0002-5646-9129" target="_blank" rel="noopener noreferrer">0000-0002-5646-9129</a></p>
+        </div>
+
+        <div class="contact-item">
+          <h3>LinkedIn</h3>
+          <p><a href="https://bd.linkedin.com/in/khalid-hasan-9288a3165" target="_blank" rel="noopener noreferrer">Khalid Hasan</a></p>
+        </div>
+
+        <div class="contact-item">
+          <h3>Google Scholar</h3>
+          <p><a href="https://scholar.google.com/scholar?q=%22Md+Khalid+Hasan%22+materials+science" target="_blank" rel="noopener noreferrer">Scholar profile / search</a></p>
+        </div>
+
+        <div class="contact-item">
+          <h3>Research Goal</h3>
+          <p>PhD pathway in advanced materials, energy materials, and ceramic additive manufacturing</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <footer class="site-footer">
     <div class="container footer-wrap">
       <p>© 2026 Md Khalid Hasan. All rights reserved.</p>
-      <a href="#home">Back to top</a>
+      <p>Designed as an elite academic research portfolio.</p>
     </div>
   </footer>
 
+  <script>
+    const menuToggle = document.getElementById("menuToggle");
+    const navMenu = document.getElementById("navMenu");
+    const themeToggle = document.getElementById("themeToggle");
+    const themeIcon = document.querySelector(".theme-icon");
+
+    menuToggle.addEventListener("click", () => {
+      navMenu.classList.toggle("active");
+      menuToggle.classList.toggle("active");
+    });
+
+    document.querySelectorAll(".nav-menu a").forEach(link => {
+      link.addEventListener("click", () => {
+        navMenu.classList.remove("active");
+        menuToggle.classList.remove("active");
+      });
+    });
+
+    // Dark mode toggle
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme === "dark") {
+      document.body.classList.add("dark-mode");
+      themeIcon.textContent = "☀";
+    }
+
+    themeToggle.addEventListener("click", () => {
+      document.body.classList.toggle("dark-mode");
+
+      const isDark = document.body.classList.contains("dark-mode");
+      localStorage.setItem("theme", isDark ? "dark" : "light");
+      themeIcon.textContent = isDark ? "☀" : "☾";
+    });
+
+    // Animated counters
+    const counters = document.querySelectorAll(".counter");
+    let counterStarted = false;
+
+    function animateCounters() {
+      if (counterStarted) return;
+
+      counters.forEach(counter => {
+        const target = +counter.getAttribute("data-target");
+        const duration = 1400;
+        const stepTime = Math.max(10, Math.floor(duration / target));
+        let current = 0;
+
+        const timer = setInterval(() => {
+          current += Math.ceil(target / 60);
+
+          if (current >= target) {
+            current = target;
+            clearInterval(timer);
+          }
+
+          if (target === 5) {
+            counter.textContent = current;
+          } else {
+            counter.textContent = current;
+          }
+        }, stepTime);
+      });
+
+      counterStarted = true;
+    }
+
+    const metricsSection = document.querySelector(".hero-metrics");
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          animateCounters();
+        }
+      });
+    }, { threshold: 0.4 });
+
+    observer.observe(metricsSection);
+  </script>
 </body>
 </html>
