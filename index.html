@@ -656,3 +656,32 @@
   <h3 id="visitor-count">0</h3>
   <p>Portfolio Visits</p>
 </div>
+<script>
+  // Visitor Counter (CountAPI)
+  fetch('https://api.countapi.xyz/hit/khalidhasan-portfolio/visits')
+    .then(res => res.json())
+    .then(data => {
+      const counter = document.getElementById('visitor-count');
+
+      let current = 0;
+      const target = data.value;
+      const speed = 20;
+
+      const updateCounter = () => {
+        const increment = Math.ceil(target / 80);
+        current += increment;
+
+        if (current >= target) {
+          counter.textContent = target;
+        } else {
+          counter.textContent = current;
+          setTimeout(updateCounter, speed);
+        }
+      };
+
+      updateCounter();
+    })
+    .catch(() => {
+      document.getElementById('visitor-count').textContent = '—';
+    });
+</script>
