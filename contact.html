@@ -20,6 +20,8 @@
 <a href="laboratory.html">Laboratory</a>
 <a href="publications.html">Publications</a>
 <a href="contact.html">Contact</a>
+
+<button class="dark-toggle" onclick="toggleDarkMode()">🌙 Dark Mode</button>
 </div>
 
 <div class="content">
@@ -40,25 +42,10 @@ I welcome communication regarding PhD opportunities, research collaboration, gra
 </section>
 
 <section class="stats-grid">
-<div class="stat-card">
-<h2>24h</h2>
-<p>Typical response intent</p>
-</div>
-
-<div class="stat-card">
-<h2>Global</h2>
-<p>Open to opportunities</p>
-</div>
-
-<div class="stat-card">
-<h2>PhD</h2>
-<p>Research focused</p>
-</div>
-
-<div class="stat-card">
-<h2>Industry</h2>
-<p>R&D ready</p>
-</div>
+<div class="stat-card"><h2>24h</h2><p>Response intent</p></div>
+<div class="stat-card"><h2>Global</h2><p>Open to opportunities</p></div>
+<div class="stat-card"><h2>PhD</h2><p>Research focused</p></div>
+<div class="stat-card"><h2>Industry</h2><p>R&D ready</p></div>
 </section>
 
 <section class="section-title">
@@ -130,16 +117,29 @@ I welcome communication regarding PhD opportunities, research collaboration, gra
 
 </section>
 
-<section class="section-title">
-<h2>Location</h2>
-<p>Dhaka, Bangladesh · Available for international opportunities and relocation.</p>
-</section>
-
 <div class="footer">
 <p>Contact Page · Md Khalid Hasan</p>
 </div>
 
 </div>
+
+<script>
+function toggleDarkMode() {
+  document.body.classList.toggle("dark-mode");
+
+  if (document.body.classList.contains("dark-mode")) {
+    localStorage.setItem("theme", "dark");
+  } else {
+    localStorage.setItem("theme", "light");
+  }
+}
+
+window.onload = function() {
+  if (localStorage.getItem("theme") === "dark") {
+    document.body.classList.add("dark-mode");
+  }
+}
+</script>
 
 </body>
 </html>
