@@ -657,3 +657,22 @@ body.dark-mode .dark-toggle:hover {
   background: #f8fafc;
   color: #111827;
 }
+/* Active page tab */
+.sidebar a.active {
+  background: #111827;
+  color: #ffffff;
+}
+
+body.dark-mode .sidebar a.active {
+  background: #f8fafc;
+  color: #111827;
+}
+
+/* Premium hero accent */
+.hero {
+  border-top: 5px solid #111827;
+}
+
+body.dark-mode .hero {
+  border-top: 5px solid #38bdf8;
+}
