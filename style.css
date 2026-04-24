@@ -558,3 +558,102 @@ body {
     font-size: 36px;
   }
 }
+/* =========================
+   DARK MODE
+========================= */
+
+.dark-toggle {
+  width: 100%;
+  border: 1px solid #d1d5db;
+  background: #ffffff;
+  color: #111827;
+  padding: 11px 14px;
+  border-radius: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 18px;
+  transition: 0.25s ease;
+}
+
+.dark-toggle:hover {
+  background: #111827;
+  color: #ffffff;
+}
+
+body.dark-mode {
+  background: #0f172a;
+  color: #f8fafc;
+}
+
+body.dark-mode .sidebar,
+body.dark-mode .hero,
+body.dark-mode .card,
+body.dark-mode .stat-card,
+body.dark-mode .highlight-card,
+body.dark-mode .research-card,
+body.dark-mode .lab-card,
+body.dark-mode .publication-card,
+body.dark-mode .contact-card {
+  background: #111827;
+  border-color: #334155;
+  color: #f8fafc;
+}
+
+body.dark-mode .sidebar {
+  box-shadow: 8px 0 35px rgba(0,0,0,0.35);
+}
+
+body.dark-mode .sidebar a {
+  color: #f8fafc;
+}
+
+body.dark-mode .sidebar a:hover {
+  background: #f8fafc;
+  color: #111827;
+}
+
+body.dark-mode .sidebar p,
+body.dark-mode .hero h3,
+body.dark-mode .hero p,
+body.dark-mode .card p,
+body.dark-mode .stat-card p,
+body.dark-mode .section-title p,
+body.dark-mode .highlight-card p,
+body.dark-mode .research-card p,
+body.dark-mode .lab-card p,
+body.dark-mode .publication-card p,
+body.dark-mode .contact-card p,
+body.dark-mode .footer {
+  color: #cbd5e1;
+}
+
+body.dark-mode .btn,
+body.dark-mode .contact-card a,
+body.dark-mode .publication-card a,
+body.dark-mode .highlight-card a {
+  background: #f8fafc;
+  color: #111827;
+}
+
+body.dark-mode .secondary-btn {
+  background: transparent;
+  color: #f8fafc;
+  border-color: #64748b;
+}
+
+body.dark-mode .research-card span,
+body.dark-mode .lab-card span {
+  background: #1e293b;
+  color: #e2e8f0;
+}
+
+body.dark-mode .dark-toggle {
+  background: #1e293b;
+  color: #f8fafc;
+  border-color: #475569;
+}
+
+body.dark-mode .dark-toggle:hover {
+  background: #f8fafc;
+  color: #111827;
+}
