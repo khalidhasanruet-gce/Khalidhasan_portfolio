@@ -20,6 +20,8 @@
 <a href="laboratory.html">Laboratory</a>
 <a href="publications.html">Publications</a>
 <a href="contact.html">Contact</a>
+
+<button class="dark-toggle" onclick="toggleDarkMode()">🌙 Dark Mode</button>
 </div>
 
 <div class="content">
@@ -35,25 +37,10 @@ My publications focus on thin films, multiferroic oxides, dielectric ceramics, m
 </section>
 
 <section class="stats-grid">
-<div class="stat-card">
-<h2>5+</h2>
-<p>Published papers</p>
-</div>
-
-<div class="stat-card">
-<h2>Scopus</h2>
-<p>Indexed works</p>
-</div>
-
-<div class="stat-card">
-<h2>Materials</h2>
-<p>Core research domain</p>
-</div>
-
-<div class="stat-card">
-<h2>Scholar</h2>
-<p>Visible citations</p>
-</div>
+<div class="stat-card"><h2>5+</h2><p>Published papers</p></div>
+<div class="stat-card"><h2>Scopus</h2><p>Indexed works</p></div>
+<div class="stat-card"><h2>Materials</h2><p>Core research domain</p></div>
+<div class="stat-card"><h2>Scholar</h2><p>Visible citations</p></div>
 </section>
 
 <section class="section-title">
@@ -66,45 +53,35 @@ My publications focus on thin films, multiferroic oxides, dielectric ceramics, m
 <div class="publication-card">
 <h2>Synthesis of Spray Deposited Transition Metals Doped ZnO Thin Films</h2>
 <p><strong>Journal:</strong> Results in Materials (2022)</p>
-<p>
-Compositionally complex ZnO thin films doped with multiple transition metals for optical and magnetic enhancement.
-</p>
+<p>Compositionally complex ZnO thin films doped with multiple transition metals for optical and magnetic enhancement.</p>
 <a href="https://doi.org/10.1016/j.rinma.2022.100263" target="_blank">Read Article</a>
 </div>
 
 <div class="publication-card">
 <h2>Structural, Morphological and Optical Properties of Multi-Doped ZnO Thin Films</h2>
 <p><strong>Journal:</strong> American Journal of Nanosciences (2021)</p>
-<p>
-Study of Ba, Sr, Mn, Fe, and Ni doped ZnO thin films focusing on morphology and optical response.
-</p>
+<p>Study of Ba, Sr, Mn, Fe, and Ni doped ZnO thin films focusing on morphology and optical response.</p>
 <a href="https://doi.org/10.11648/j.ajn.20210701.12" target="_blank">Read Article</a>
 </div>
 
 <div class="publication-card">
 <h2>Influence of Nb and Zr Co-Doping on CaCu₃Ti₄O₁₂ Ceramics</h2>
 <p><strong>Conference Series:</strong> IOP Materials Science and Engineering (2021)</p>
-<p>
-Dielectric, structural, and morphological modification in co-doped CCTO ceramics.
-</p>
+<p>Dielectric, structural, and morphological modification in co-doped CCTO ceramics.</p>
 <a href="https://doi.org/10.1088/1757-899X/1045/1/012004" target="_blank">Read Article</a>
 </div>
 
 <div class="publication-card">
 <h2>Structural, Optical and Magnetic Properties of Compositionally Complex BiFeO₃</h2>
 <p><strong>Journal:</strong> Journal of Materials Science: Materials in Electronics (2020)</p>
-<p>
-Multiferroic BiFeO₃ systems with modified composition for enhanced physical properties.
-</p>
+<p>Multiferroic BiFeO₃ systems with modified composition for enhanced physical properties.</p>
 <a href="https://doi.org/10.1007/s10854-020-04497-y" target="_blank">Read Article</a>
 </div>
 
 <div class="publication-card">
 <h2>Influence of Ba and Mo Co-Doping on BiFeO₃ Ceramics</h2>
 <p><strong>Journal:</strong> Materials Research Express (2020)</p>
-<p>
-Ba and Mo co-doping effects on structural, dielectric, magnetic, and optical behavior.
-</p>
+<p>Ba and Mo co-doping effects on structural, dielectric, magnetic, and optical behavior.</p>
 <a href="https://doi.org/10.1088/2053-1591/ab6801" target="_blank">Read Article</a>
 </div>
 
@@ -141,6 +118,24 @@ Ba and Mo co-doping effects on structural, dielectric, magnetic, and optical beh
 </div>
 
 </div>
+
+<script>
+function toggleDarkMode() {
+  document.body.classList.toggle("dark-mode");
+
+  if (document.body.classList.contains("dark-mode")) {
+    localStorage.setItem("theme", "dark");
+  } else {
+    localStorage.setItem("theme", "light");
+  }
+}
+
+window.onload = function() {
+  if (localStorage.getItem("theme") === "dark") {
+    document.body.classList.add("dark-mode");
+  }
+}
+</script>
 
 </body>
 </html>
