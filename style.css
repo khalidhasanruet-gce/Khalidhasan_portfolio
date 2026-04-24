@@ -241,3 +241,43 @@ body {
     font-size: 22px;
   }
 }
+.publication-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+.publication-card {
+  border: 1px solid #dddddd;
+  border-left: 5px solid #111111;
+  border-radius: 14px;
+  padding: 28px;
+  background: #ffffff;
+  transition: 0.25s ease;
+}
+
+.publication-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 28px rgba(0,0,0,0.08);
+}
+
+.publication-card h2 {
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+.publication-card p {
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+.publication-card a {
+  display: inline-block;
+  margin-top: 10px;
+  background: #111111;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-weight: 600;
+}
