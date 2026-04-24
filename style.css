@@ -281,3 +281,47 @@ body {
   border-radius: 8px;
   font-weight: 600;
 }
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.contact-card {
+  border: 1px solid #dddddd;
+  border-radius: 14px;
+  padding: 28px;
+  background: #ffffff;
+  transition: 0.25s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 28px rgba(0,0,0,0.08);
+}
+
+.contact-card h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.contact-card p {
+  color: #444444;
+  margin-bottom: 14px;
+}
+
+.contact-card a {
+  display: inline-block;
+  color: #ffffff;
+  background: #111111;
+  padding: 10px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+@media (max-width: 800px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
