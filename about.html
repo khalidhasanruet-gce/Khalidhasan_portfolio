@@ -20,8 +20,10 @@
 <a href="laboratory.html">Laboratory</a>
 <a href="publications.html">Publications</a>
 <a href="contact.html">Contact</a>
-</div>
+
 <button class="dark-toggle" onclick="toggleDarkMode()">🌙 Dark Mode</button>
+</div>
+
 <div class="content">
 
 <section class="hero">
@@ -30,7 +32,7 @@
 <h3>Research-Oriented Materials Science Graduate with Industrial R&D Experience</h3>
 
 <p>
-I am Md Khalid Hasan, a Materials Science graduate from Rajshahi University of Engineering & Technology (RUET), Bangladesh. My academic and professional background combines research publications, laboratory training, and industrial R&D experience in ceramic materials and advanced functional systems.
+I am Md Khalid Hasan, a Materials Science graduate from Rajshahi University of Engineering & Technology (RUET), Bangladesh. My background combines academic research, peer-reviewed publications, laboratory training, and industrial R&D experience in ceramic materials and advanced functional systems.
 </p>
 </section>
 
@@ -140,6 +142,24 @@ To pursue doctoral research and contribute internationally through innovation in
 </div>
 
 </div>
-<button class="dark-toggle" onclick="toggleDarkMode()">🌙 Dark Mode</button>
+
+<script>
+function toggleDarkMode() {
+  document.body.classList.toggle("dark-mode");
+
+  if (document.body.classList.contains("dark-mode")) {
+    localStorage.setItem("theme", "dark");
+  } else {
+    localStorage.setItem("theme", "light");
+  }
+}
+
+window.onload = function() {
+  if (localStorage.getItem("theme") === "dark") {
+    document.body.classList.add("dark-mode");
+  }
+}
+</script>
+
 </body>
 </html>
