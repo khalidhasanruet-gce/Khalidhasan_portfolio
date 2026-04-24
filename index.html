@@ -18,16 +18,16 @@
 }
 
 .page {
-  max-width: 1080px;
+  max-width: 1100px;
   margin: 0 auto;
   padding: 24px 30px 55px;
   background: #ffffff;
 }
 
 header {
-  border-bottom: 1px solid #999999;
+  border-bottom: 1px solid #888888;
   padding-bottom: 14px;
-  margin-bottom: 18px;
+  margin-bottom: 20px;
 }
 
 h1 {
@@ -45,34 +45,43 @@ h1 {
 
 .layout {
   display: grid;
-  grid-template-columns: 210px 1fr;
+  grid-template-columns: 220px 1fr;
   gap: 30px;
   align-items: start;
 }
 
 aside {
-  border: 1px solid #cccccc;
+  border: 1px solid #bbbbbb;
   background: #ffffff;
-  padding: 12px;
   position: sticky;
   top: 18px;
 }
 
 aside h2 {
-  margin: 0 0 10px;
-  padding-bottom: 6px;
-  border-bottom: 1px solid #cccccc;
+  margin: 0;
+  padding: 9px 10px;
+  border-bottom: 1px solid #bbbbbb;
   font-size: 16px;
   font-weight: normal;
+  background: #f5f5f5;
+}
+
+.nav-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.nav-table td {
+  border-bottom: 1px solid #dddddd;
+  padding: 0;
 }
 
 .tab-button {
   display: block;
   width: 100%;
   margin: 0;
-  padding: 8px 6px;
+  padding: 9px 10px;
   border: 0;
-  border-bottom: 1px solid #dddddd;
   background: #ffffff;
   color: #111111;
   text-align: left;
@@ -84,6 +93,7 @@ aside h2 {
 .tab-button:hover,
 .tab-button.active {
   background: #eeeeee;
+  font-weight: bold;
 }
 
 main {
@@ -154,21 +164,30 @@ li {
   display: block;
 }
 
-.info-table {
+.info-table,
+.academic-table {
   border-collapse: collapse;
   width: 100%;
   margin-top: 12px;
 }
 
-.info-table td {
-  padding: 6px 8px;
-  border-bottom: 1px solid #dddddd;
+.info-table td,
+.academic-table th,
+.academic-table td {
+  padding: 7px 8px;
+  border: 1px solid #dddddd;
   vertical-align: top;
 }
 
 .info-table td:first-child {
   width: 150px;
   font-weight: bold;
+}
+
+.academic-table th {
+  background: #f3f3f3;
+  font-weight: bold;
+  text-align: left;
 }
 
 .news-list {
@@ -188,7 +207,7 @@ li {
 }
 
 .publication li {
-  margin-bottom: 13px;
+  margin-bottom: 14px;
 }
 
 .gallery {
@@ -221,6 +240,17 @@ li {
   line-height: 1.45;
 }
 
+.contact-card {
+  border: 1px solid #cccccc;
+  padding: 14px 16px;
+  max-width: 620px;
+  background: #ffffff;
+}
+
+.contact-card p {
+  margin: 7px 0;
+}
+
 .small-note {
   color: #444444;
   font-size: 13px;
@@ -234,7 +264,7 @@ footer {
   font-size: 13px;
 }
 
-@media (max-width: 780px) {
+@media (max-width: 820px) {
   .page {
     padding: 18px 18px 45px;
   }
@@ -251,6 +281,10 @@ footer {
   .gallery {
     grid-template-columns: 1fr;
   }
+
+  .academic-table {
+    font-size: 13px;
+  }
 }
 
   </style>
@@ -264,15 +298,17 @@ footer {
     </header><div class="layout">
   <aside>
     <h2>Contents</h2>
-    <button class="tab-button active" onclick="openPage('home', this)">Home</button>
-    <button class="tab-button" onclick="openPage('biography', this)">Biography</button>
-    <button class="tab-button" onclick="openPage('research', this)">Research</button>
-    <button class="tab-button" onclick="openPage('projects', this)">Projects</button>
-    <button class="tab-button" onclick="openPage('laboratory', this)">Laboratory</button>
-    <button class="tab-button" onclick="openPage('publications', this)">Publications</button>
-    <button class="tab-button" onclick="openPage('skills', this)">Skills</button>
-    <button class="tab-button" onclick="openPage('cv', this)">CV</button>
-    <button class="tab-button" onclick="openPage('contact', this)">Contact</button>
+    <table class="nav-table">
+      <tr><td><button class="tab-button active" onclick="openPage('home', this)">Home</button></td></tr>
+      <tr><td><button class="tab-button" onclick="openPage('biography', this)">Biography</button></td></tr>
+      <tr><td><button class="tab-button" onclick="openPage('research', this)">Research</button></td></tr>
+      <tr><td><button class="tab-button" onclick="openPage('projects', this)">Projects</button></td></tr>
+      <tr><td><button class="tab-button" onclick="openPage('laboratory', this)">Laboratory Experience</button></td></tr>
+      <tr><td><button class="tab-button" onclick="openPage('publications', this)">Publications</button></td></tr>
+      <tr><td><button class="tab-button" onclick="openPage('skills', this)">Skills</button></td></tr>
+      <tr><td><button class="tab-button" onclick="openPage('cv', this)">CV</button></td></tr>
+      <tr><td><button class="tab-button" onclick="openPage('contact', this)">Contact</button></td></tr>
+    </table>
   </aside>
 
   <main>
@@ -289,7 +325,7 @@ footer {
           </p>
           <p>
             His academic interests are centered on composition-processing-structure-property relationships in
-            ceramic and oxide materials, with particular emphasis on functional ceramics, ZnO-based thin films,
+            ceramic and oxide materials, with emphasis on functional ceramics, ZnO-based thin films,
             BiFeO<sub>3</sub>-based ceramics, and CCTO-based dielectric systems.
           </p>
 
@@ -304,7 +340,7 @@ footer {
             </tr>
             <tr>
               <td>Research Areas</td>
-              <td>Functional ceramics, oxide thin films, dielectric ceramics, multiferroics, and materials characterization</td>
+              <td>Functional ceramics, oxide thin films, dielectric ceramics, multiferroics, energy materials, and advanced characterization</td>
             </tr>
             <tr>
               <td>Email</td>
@@ -316,7 +352,7 @@ footer {
 
       <h3>Recent Updates</h3>
       <div class="news-list">
-        <div class="news-item"><span class="news-date">2026</span> Preparing graduate research applications in materials science and engineering.</div>
+        <div class="news-item"><span class="news-date">2026</span> Preparing graduate research applications for MSc/PhD opportunities in advanced materials science and engineering.</div>
         <div class="news-item"><span class="news-date">2022</span> Publication on transition-metal-doped compositionally complex ZnO thin films.</div>
         <div class="news-item"><span class="news-date">2020-2021</span> Publications on BiFeO<sub>3</sub>-based ceramics, CCTO ceramics, and ZnO thin films.</div>
       </div>
@@ -325,18 +361,16 @@ footer {
     <section id="biography" class="content-page">
       <h2 class="page-title">Biography</h2>
       <p>
-        Md Khalid Hasan received his BSc degree in Glass and Ceramic Engineering from Rajshahi University of
-        Engineering &amp; Technology, Bangladesh. His undergraduate training provided a foundation in ceramic
-        materials, glass science, phase analysis, thermal processing, powder technology, and materials characterization.
+        Md Khalid Hasan completed his Bachelor of Science in Glass and Ceramic Engineering from Rajshahi University of
+        Engineering &amp; Technology (RUET), Bangladesh, with a CGPA of 3.70/4.00 and ranking within the top 5% of his class.
       </p>
       <p>
-        His research experience includes functional oxide ceramics, transition-metal-doped ZnO thin films,
-        BiFeO<sub>3</sub>-based multiferroic ceramics, and CCTO-based dielectric ceramics. Through these works, he developed
-        experience in literature review, experimental design, materials processing, data interpretation, and scientific writing.
+        His academic training included crystallography, materials characterization, nanotechnology, energy conversion and storage,
+        solid state chemistry, physical ceramics, mechanical behaviour of ceramics, metallurgy, engineering mechanics, and thermodynamics.
       </p>
       <p>
-        He is currently working in ceramic industrial R&amp;D, where his responsibilities are related to raw material
-        assessment, ceramic body formulation, process optimization, defect analysis, and quality improvement.
+        He has research experience in semiconductor materials, functional oxide ceramics, transition-metal-doped ZnO thin films,
+        BiFeO<sub>3</sub>-based multiferroics, and dielectric ceramics. He is currently engaged in ceramic industrial R&amp;D focused on process optimization and material performance improvement.
       </p>
     </section>
 
@@ -344,6 +378,7 @@ footer {
       <h2 class="page-title">Research Interests</h2>
       <ul>
         <li>Functional ceramics and advanced oxide materials</li>
+        <li>Energy materials and sustainable technologies</li>
         <li>Compositionally complex ZnO thin films</li>
         <li>BiFeO<sub>3</sub>-based multiferroic ceramic systems</li>
         <li>CCTO-based dielectric ceramics and electronic ceramic materials</li>
@@ -385,10 +420,74 @@ footer {
     <section id="laboratory" class="content-page">
       <h2 class="page-title">Laboratory Experience</h2>
       <p>
-        Selected laboratory images showing facilities and research environments related to ceramic processing,
-        powder preparation, thermal treatment, phase analysis, and microstructural characterization.
+        My undergraduate training in Glass and Ceramic Engineering provided practical exposure to laboratory
+        environments for glass forming, ceramic forming, powder processing, chemical analysis, thermal treatment,
+        mechanical testing, phase analysis, and microstructural characterization.
       </p>
 
+      <table class="academic-table">
+        <thead>
+          <tr>
+            <th>Laboratory / Facility</th>
+            <th>Equipment and Techniques</th>
+            <th>Practical Experience Gained</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Glass Forming Laboratory</td>
+            <td>Glass melting furnaces; glass forming and testing facilities</td>
+            <td>Developed understanding of batch preparation, glass melting, forming behavior, and basic evaluation of glass materials.</td>
+          </tr>
+          <tr>
+            <td>Chemical Analysis Laboratory</td>
+            <td>pH meter, digital water bath, magnetic stirrer, fume chamber, chemical reagents and raw materials</td>
+            <td>Practiced wet chemical analysis, pH measurement, controlled heating, solution preparation, powder mixing, and safe chemical handling.</td>
+          </tr>
+          <tr>
+            <td>Material Characterization Laboratory</td>
+            <td>Microhardness tester, impact resistance tester, pycnometer, impedance analyzer, dilatometer, DSC, thermal conductivity meter, annealing point measuring unit</td>
+            <td>Gained exposure to mechanical, thermal, density, and electrical-property evaluation of ceramic and glass materials.</td>
+          </tr>
+          <tr>
+            <td>Ceramic Forming Laboratory</td>
+            <td>Planetary ball mill, assembly ball mill, jaw crusher, vibratory sieve shaker, jiggering and jollying machine, hot plate, electric dryer, muffle furnace, electric kiln</td>
+            <td>Practiced ceramic raw-material preparation, crushing, milling, sieving, slip/slurry preparation, drying, forming, and firing of ceramic bodies.</td>
+          </tr>
+          <tr>
+            <td>Nano Synthesis Laboratory</td>
+            <td>Refractometer, ultrasonic cleaner, electrometer, UV-Visible spectrophotometer, glass softening point tester, electric balance, three-point bending tester, flame photometer, viscosity tester, hydraulic hot press</td>
+            <td>Developed familiarity with synthesis-related measurements, optical analysis, electrical measurements, viscosity testing, mechanical testing, and hot pressing concepts.</td>
+          </tr>
+          <tr>
+            <td>Materials Testing Laboratory</td>
+            <td>Universal testing machine, surface grinder, cutting machine, lathe machine</td>
+            <td>Gained practical exposure to tensile and compressive testing, specimen preparation, surface finishing, cutting, grinding, and basic machining operations.</td>
+          </tr>
+          <tr>
+            <td>Microstructure Analysis Laboratory</td>
+            <td>Metallurgical microscope, optical microscope, microscope with image analyzer</td>
+            <td>Practiced observation and interpretation of microstructures in ceramic, glass, and metallic materials using optical microscopy and image-based analysis.</td>
+          </tr>
+          <tr>
+            <td>Computer Laboratory</td>
+            <td>C/C++, CAD-CAM, SolidWorks, Adobe Photoshop, Adobe Illustrator, networked computing facilities</td>
+            <td>Used computing tools for technical drawing, design-related tasks, data presentation, and engineering coursework support.</td>
+          </tr>
+          <tr>
+            <td>XRD Laboratory</td>
+            <td>X-ray diffraction system; Bragg-Brentano geometry; powder, solid, and thin-film sample compatibility</td>
+            <td>Developed practical understanding of crystalline phase identification, diffraction data interpretation, and structural analysis of ceramic and related materials.</td>
+          </tr>
+          <tr>
+            <td>SEM Laboratory</td>
+            <td>Scanning electron microscope; surface and cross-sectional imaging; thin film, solid, powder, and fiber sample compatibility</td>
+            <td>Gained exposure to microstructural and morphological analysis using SEM images for research interpretation and materials-property correlation.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>Laboratory Gallery</h3>
       <div class="gallery">
         <figure>
           <img src="images/lab-xrd.jpg" alt="X-ray diffraction facility" />
@@ -430,89 +529,34 @@ footer {
       <h2 class="page-title">Publications</h2>
       <ol class="publication">
         <li>
-          M. R. Al Hassan, M. A. Islam, K. Salam, K. F. Amin, and M. K. Hasan,
-          “Synthesis of spray deposited transition metals doped (Cr, Mn, Fe, Ni, and Cu) compositionally complex
-          ZnO thin films with enhanced band gap and magnetism,” <em>Results in Materials</em>, 2022.
+          M. R. Al Hassan, F. Asrafuzzaman, M. A. Islam, K. Salam, K. F. Amin, and M. K. Hasan,
+          “<a href="https://doi.org/10.1016/j.rinma.2022.100263" target="_blank" rel="noopener noreferrer">Synthesis of spray deposited transition metals doped (Cr, Mn, Fe, Ni, and Cu) compositionally complex ZnO thin films with enhanced band gap and magnetism</a>,”
+          <em>Results in Materials</em>, vol. 13, 100263, 2022.
         </li>
         <li>
           M. R. Al Hassan, A. Sen, M. K. Hasan, and M. A. Matin,
-          “Structural, morphological and optical properties of spray deposited multi-doped compositionally complex
-          ZnO thin films,” <em>American Journal of Nanosciences</em>, 2021.
+          “<a href="https://doi.org/10.11648/j.ajn.20210701.12" target="_blank" rel="noopener noreferrer">Structural, Morphological and Optical Properties of Spray Deposited Multi-doped (Ba, Sr, Mn, Fe and Ni) Compositionally Complex ZnO Thin Films</a>,”
+          <em>American Journal of Nanosciences</em>, vol. 7, no. 1, pp. 6-14, 2021.
         </li>
         <li>
           M. K. Hasan, S. H. Shant, M. Z. Islam, and M. E. Haque,
-          “Influence of Nb and Zr co-doping on the structural, morphological and dielectric properties of
-          CaCu<sub>3</sub>Ti<sub>4</sub>O<sub>12</sub> ceramics,” <em>IOP Conference Series</em>, 2021.
+          “<a href="https://doi.org/10.1088/1757-899X/1045/1/012004" target="_blank" rel="noopener noreferrer">Influence of Nb and Zr co-doping on the structural, morphological and dielectric properties of CaCu<sub>3</sub>Ti<sub>4</sub>O<sub>12</sub> ceramics</a>,”
+          <em>IOP Conference Series: Materials Science and Engineering</em>, vol. 1045, 012004, 2021.
         </li>
         <li>
           A. Sen, M. K. Hasan, A. H. Munna, D. J. Roy, M. R. A. Hassan, and F. Gulshan,
-          “Structural, optical, and magnetic properties of compositionally complex bismuth ferrite,”
-          <em>Journal of Materials Science: Materials in Electronics</em>, 2020.
+          “<a href="https://doi.org/10.1007/s10854-020-04497-y" target="_blank" rel="noopener noreferrer">Structural, optical, and magnetic properties of compositionally complex bismuth ferrite (BiFeO<sub>3</sub>)</a>,”
+          <em>Journal of Materials Science: Materials in Electronics</em>, vol. 31, pp. 19713-19727, 2020.
         </li>
         <li>
           A. Sen, M. K. Hasan, M. Z. Islam, M. R. A. Hassan, T. Zaman, M. A. Matin, and F. Gulshan,
-          “Influence of Ba and Mo co-doping on the structural, electrical, magnetic and optical properties of
-          BiFeO<sub>3</sub> ceramics,” <em>Materials Research Express</em>, 2020.
+          “<a href="https://doi.org/10.1088/2053-1591/ab6801" target="_blank" rel="noopener noreferrer">Influence of Ba and Mo co-doping on the structural, electrical, magnetic and optical properties of BiFeO<sub>3</sub> ceramics</a>,”
+          <em>Materials Research Express</em>, vol. 7, 016312, 2020.
         </li>
       </ol>
-      <p class="small-note">Add DOI or journal links after confirming the final citation details.</p>
     </section>
 
     <section id="skills" class="content-page">
       <h2 class="page-title">Research and Technical Skills</h2>
       <ul>
-        <li><strong>Materials processing:</strong> ceramic powder preparation, mixing, calcination, pressing, and sintering</li>
-        <li><strong>Characterization:</strong> XRD, SEM, optical characterization, dielectric analysis, XRF, thermal analysis, and dilatometry</li>
-        <li><strong>Scientific software:</strong> FullProf Suite, HighScore Plus, ImageJ, OriginPro, AutoCAD, and Microsoft Office</li>
-        <li><strong>Research practice:</strong> literature review, experimental planning, data analysis, scientific writing, and manuscript preparation</li>
-        <li><strong>Industrial R&amp;D:</strong> raw material evaluation, ceramic defect analysis, process optimization, and quality improvement</li>
-      </ul>
-    </section>
-
-    <section id="cv" class="content-page">
-      <h2 class="page-title">Curriculum Vitae</h2>
-      <p>
-        A complete academic CV is available here:
-        <a href="cv/Md_Khalid_Hasan_CV.pdf">Download CV</a>
-      </p>
-      <p class="small-note">
-        Upload the CV inside a folder named <strong>cv</strong> and save it as
-        <strong>Md_Khalid_Hasan_CV.pdf</strong>.
-      </p>
-    </section>
-
-    <section id="contact" class="content-page">
-      <h2 class="page-title">Contact</h2>
-      <p>
-        <strong>Email:</strong> <a href="mailto:khalidhasan.ruet@gmail.com">khalidhasan.ruet@gmail.com</a><br />
-        <strong>ORCID:</strong> <a href="https://orcid.org/0000-0002-5646-9129">0000-0002-5646-9129</a><br />
-        <strong>Google Scholar:</strong> <a href="https://scholar.google.com/">Google Scholar Profile</a><br />
-        <strong>LinkedIn:</strong> <a href="https://bd.linkedin.com/">LinkedIn Profile</a>
-      </p>
-    </section>
-  </main>
-</div>
-
-<footer>
-  Last updated: April 2026 | Md Khalid Hasan
-</footer>
-
-  </div>  <script>
-    function openPage(pageId, button) {
-      var pages = document.querySelectorAll('.content-page');
-      var buttons = document.querySelectorAll('.tab-button');
-
-      pages.forEach(function(page) {
-        page.classList.remove('active');
-      });
-
-      buttons.forEach(function(btn) {
-        btn.classList.remove('active');
-      });
-
-      document.getElementById(pageId).classList.add('active');
-      button.classList.add('active');
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
-  </script></body>
-                                                                                                                                                         </html>
+        <li><strong>Materials processing:</strong> ceramic powder preparation, mixing, calcination,
