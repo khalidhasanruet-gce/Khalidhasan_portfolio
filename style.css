@@ -334,3 +334,21 @@ body {
     min-height: 230px;
   }
 }
+.research-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+  gap: 16px;
+  margin: 18px 0;
+}
+
+.research-gallery img {
+  width: 100%;
+  border-radius: 14px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 10px 22px rgba(0,0,0,0.05);
+  transition: 0.25s ease;
+}
+
+.research-gallery img:hover {
+  transform: scale(1.02);
+}
