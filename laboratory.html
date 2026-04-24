@@ -20,6 +20,8 @@
 <a href="laboratory.html">Laboratory</a>
 <a href="publications.html">Publications</a>
 <a href="contact.html">Contact</a>
+
+<button class="dark-toggle" onclick="toggleDarkMode()">🌙 Dark Mode</button>
 </div>
 
 <div class="content">
@@ -35,25 +37,10 @@ My laboratory experience combines academic research training and industrial prac
 </section>
 
 <section class="stats-grid">
-<div class="stat-card">
-<h2>XRD</h2>
-<p>Structural analysis</p>
-</div>
-
-<div class="stat-card">
-<h2>SEM</h2>
-<p>Microstructure imaging</p>
-</div>
-
-<div class="stat-card">
-<h2>XRF</h2>
-<p>Composition testing</p>
-</div>
-
-<div class="stat-card">
-<h2>R&D</h2>
-<p>Industrial application</p>
-</div>
+<div class="stat-card"><h2>XRD</h2><p>Structural analysis</p></div>
+<div class="stat-card"><h2>SEM</h2><p>Microstructure imaging</p></div>
+<div class="stat-card"><h2>XRF</h2><p>Composition testing</p></div>
+<div class="stat-card"><h2>R&D</h2><p>Industrial application</p></div>
 </section>
 
 <section class="section-title">
@@ -67,9 +54,7 @@ My laboratory experience combines academic research training and industrial prac
 <img src="lab_xrd_cme.jpg" alt="XRD">
 <div>
 <h2>X-Ray Diffraction (XRD)</h2>
-<p>
-Used for crystal structure analysis, phase identification, peak shifting, lattice parameter study, and material phase evolution.
-</p>
+<p>Used for crystal structure analysis, phase identification, peak shifting, lattice parameter study, and material phase evolution.</p>
 <span>Phase Analysis · Crystal Structure</span>
 </div>
 </div>
@@ -78,9 +63,7 @@ Used for crystal structure analysis, phase identification, peak shifting, lattic
 <img src="lab_sem_cme.jpg" alt="SEM">
 <div>
 <h2>Scanning Electron Microscopy (SEM)</h2>
-<p>
-Applied for surface morphology, grain size observation, fracture study, particle distribution, and microstructural evaluation.
-</p>
+<p>Applied for surface morphology, grain size observation, fracture study, particle distribution, and microstructural evaluation.</p>
 <span>Microstructure · Morphology</span>
 </div>
 </div>
@@ -89,9 +72,7 @@ Applied for surface morphology, grain size observation, fracture study, particle
 <img src="lab_xrf_cme.png" alt="XRF">
 <div>
 <h2>X-Ray Fluorescence (XRF)</h2>
-<p>
-Used for elemental and oxide composition determination of raw materials, ceramic bodies, and synthesized research samples.
-</p>
+<p>Used for elemental and oxide composition determination of raw materials, ceramic bodies, and synthesized research samples.</p>
 <span>Composition · Quality Control</span>
 </div>
 </div>
@@ -100,9 +81,7 @@ Used for elemental and oxide composition determination of raw materials, ceramic
 <img src="lab_thermal_cme.png" alt="Thermal Analysis">
 <div>
 <h2>Thermal Analysis</h2>
-<p>
-Worked with thermal systems to study heat stability, decomposition behavior, firing response, and temperature-dependent changes.
-</p>
+<p>Worked with thermal systems to study heat stability, decomposition behavior, firing response, and temperature-dependent changes.</p>
 <span>TGA · DSC · Thermal Stability</span>
 </div>
 </div>
@@ -148,16 +127,29 @@ Worked with thermal systems to study heat stability, decomposition behavior, fir
 
 </section>
 
-<section class="section-title">
-<h2>Technical Readiness</h2>
-<p>Prepared to contribute immediately in advanced research laboratories and industrial materials environments.</p>
-</section>
-
 <div class="footer">
 <p>Laboratory Portfolio · Md Khalid Hasan</p>
 </div>
 
 </div>
+
+<script>
+function toggleDarkMode() {
+  document.body.classList.toggle("dark-mode");
+
+  if (document.body.classList.contains("dark-mode")) {
+    localStorage.setItem("theme", "dark");
+  } else {
+    localStorage.setItem("theme", "light");
+  }
+}
+
+window.onload = function() {
+  if (localStorage.getItem("theme") === "dark") {
+    document.body.classList.add("dark-mode");
+  }
+}
+</script>
 
 </body>
 </html>
