@@ -25,12 +25,40 @@
 <div class="content">
 
 <section class="hero">
-<h1>Research Portfolio</h1>
-<h3>Thin Films, Functional Oxides, Ceramics & Materials Innovation</h3>
+<p class="eyebrow">Research Portfolio</p>
+<h1>Advanced Materials Research</h1>
+<h3>Thin Films, Functional Oxides, Ceramics & Property Engineering</h3>
 
 <p>
-My research focuses on advanced ceramic materials, thin films, functional oxides, structural engineering through doping, and performance optimization using analytical characterization methods.
+My research focuses on synthesis, characterization, and performance enhancement of advanced ceramic and oxide materials through dopant engineering, thin film processing, and structure-property optimization.
 </p>
+</section>
+
+<section class="stats-grid">
+<div class="stat-card">
+<h2>5+</h2>
+<p>Published works</p>
+</div>
+
+<div class="stat-card">
+<h2>Thin Films</h2>
+<p>ZnO-based systems</p>
+</div>
+
+<div class="stat-card">
+<h2>BiFeO₃</h2>
+<p>Multiferroic ceramics</p>
+</div>
+
+<div class="stat-card">
+<h2>CCTO</h2>
+<p>Dielectric ceramics</p>
+</div>
+</section>
+
+<section class="section-title">
+<h2>Selected Research Projects</h2>
+<p>Representative academic work supported by experiments, characterization, and publication outcomes.</p>
 </section>
 
 <section class="research-list">
@@ -38,12 +66,12 @@ My research focuses on advanced ceramic materials, thin films, functional oxides
 <div class="research-card">
 <h2>Transition Metal Doped ZnO Thin Films</h2>
 <p>
-Spray-deposited compositionally complex ZnO thin films doped with Cr, Mn, Fe, Ni and Cu to enhance optical band gap and magnetic response.
+Developed spray-deposited ZnO thin films doped with Cr, Mn, Fe, Ni, and Cu to improve optical band gap control and magnetic response.
 </p>
 
 <div class="research-gallery">
-<img src="zno1.png" alt="ZnO Research Image">
-<img src="zno2.png" alt="ZnO Research Image">
+<img src="zno1.png" alt="ZnO Research">
+<img src="zno2.png" alt="ZnO Research">
 </div>
 
 <span>Thin Films · ZnO · Band Gap Engineering</span>
@@ -52,45 +80,112 @@ Spray-deposited compositionally complex ZnO thin films doped with Cr, Mn, Fe, Ni
 <div class="research-card">
 <h2>Compositionally Complex BiFeO₃</h2>
 <p>
-Study of structural, optical and magnetic properties of compositionally modified BiFeO₃ multiferroic ceramics.
+Investigated structural, optical, and magnetic properties of compositionally modified BiFeO₃ multiferroic ceramics.
 </p>
 
 <div class="research-gallery">
-<img src="bfo1.png" alt="BiFeO3 Research Image">
+<img src="bfo1.png" alt="BiFeO3 Research">
 </div>
 
-<span>BiFeO₃ · Multiferroics · Magnetic Properties</span>
+<span>BiFeO₃ · Functional Oxides · Magnetism</span>
 </div>
 
 <div class="research-card">
 <h2>Ba and Mo Co-Doped BiFeO₃ Ceramics</h2>
 <p>
-Investigated structural evolution, dielectric, magnetic and optical behavior through Ba and Mo co-doping.
+Studied the effects of Ba and Mo co-doping on dielectric, structural, magnetic, and optical performance of BiFeO₃ systems.
 </p>
 
 <div class="research-gallery">
-<img src="bfo2.png" alt="BiFeO3 Co-doped Research Image">
+<img src="bfo2.png" alt="BiFeO3 Codoping">
 </div>
 
-<span>Co-Doping · Functional Ceramics</span>
+<span>Co-Doping · Multiferroics · Property Tuning</span>
 </div>
 
 <div class="research-card">
 <h2>Nb and Zr Co-Doped CCTO Ceramics</h2>
 <p>
-Evaluated dielectric, structural and morphological changes in CaCu₃Ti₄O₁₂ ceramics through dopant engineering.
+Explored dielectric enhancement, phase evolution, and morphology changes in CaCu₃Ti₄O₁₂ ceramics through co-doping.
 </p>
 
 <div class="research-gallery">
-<img src="ccto1.png" alt="CCTO Research Image">
+<img src="ccto1.png" alt="CCTO Research">
 </div>
 
-<span>CCTO · Dielectric Ceramics</span>
+<span>CCTO · Dielectric Ceramics · Functional Materials</span>
+</div>
+
+<div class="research-card">
+<h2>Current Research Direction</h2>
+<p>
+Interested in sustainable materials, energy ceramics, nanostructured oxides, additive manufacturing, and next-generation functional materials for industrial and academic applications.
+</p>
+
+<span>Future Research · PhD Ready</span>
 </div>
 
 </section>
 
+<section class="section-title">
+<h2>Research Strengths</h2>
+<p>Capabilities developed through academic publications and laboratory work.</p>
+</section>
+
+<section class="cards">
+
+<div class="card">
+<h2>Experimental Design</h2>
+<p>Material synthesis planning, dopant selection, parameter optimization, and result comparison.</p>
 </div>
+
+<div class="card">
+<h2>Characterization</h2>
+<p>XRD, SEM, XRF, thermal analysis, microscopy, and property correlation studies.</p>
+</div>
+
+<div class="card">
+<h2>Scientific Writing</h2>
+<p>Peer-reviewed publication writing, data presentation, and technical documentation.</p>
+</div>
+
+</section>
+
+<div class="footer">
+<p>Research Portfolio · Md Khalid Hasan</p>
+</div>
+
+</div>
+
+<!-- Zoom Modal -->
+<div id="imgModal" class="img-modal">
+<span class="close-modal">&times;</span>
+<img class="modal-content" id="zoomImg">
+</div>
+
+<script>
+const modal = document.getElementById("imgModal");
+const modalImg = document.getElementById("zoomImg");
+const imgs = document.querySelectorAll(".research-gallery img");
+const closeBtn = document.querySelector(".close-modal");
+
+imgs.forEach(img => {
+  img.onclick = function() {
+    modal.style.display = "flex";
+    modalImg.src = this.src;
+  }
+});
+
+closeBtn.onclick = function() {
+  modal.style.display = "none";
+}
+
+modal.onclick = function(e) {
+  if (e.target === modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
 
 </body>
 </html>
