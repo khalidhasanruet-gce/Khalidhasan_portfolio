@@ -784,3 +784,77 @@ body.dark-mode .sidebar a.active::before {
 body.dark-mode .hero::after {
   background: radial-gradient(circle, rgba(14,165,233,0.16), transparent 65%);
 }
+/* =========================
+   ULTRA PREMIUM SIDEBAR NAVIGATION
+========================= */
+
+.sidebar nav,
+.sidebar {
+  scroll-behavior: smooth;
+}
+
+.sidebar a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 46px;
+  padding: 12px 16px;
+  margin-bottom: 10px;
+  border-radius: 14px;
+  letter-spacing: 0.2px;
+}
+
+/* Add icons before each tab */
+.sidebar a[href="index.html"]::after {
+  content: "⌂";
+  margin-left: auto;
+  opacity: 0.65;
+}
+
+.sidebar a[href="about.html"]::after {
+  content: "👤";
+  margin-left: auto;
+  opacity: 0.65;
+}
+
+.sidebar a[href="research.html"]::after {
+  content: "🔬";
+  margin-left: auto;
+  opacity: 0.65;
+}
+
+.sidebar a[href="laboratory.html"]::after {
+  content: "⚗";
+  margin-left: auto;
+  opacity: 0.65;
+}
+
+.sidebar a[href="publications.html"]::after {
+  content: "📄";
+  margin-left: auto;
+  opacity: 0.65;
+}
+
+.sidebar a[href="contact.html"]::after {
+  content: "✉";
+  margin-left: auto;
+  opacity: 0.65;
+}
+
+.sidebar a:hover::after,
+.sidebar a.active::after {
+  opacity: 1;
+}
+
+/* Premium active glow */
+.sidebar a.active {
+  transform: translateX(4px);
+}
+
+/* Dark mode button premium */
+.dark-toggle {
+  margin-top: 24px;
+  min-height: 46px;
+  border-radius: 14px;
+  letter-spacing: 0.3px;
+}
