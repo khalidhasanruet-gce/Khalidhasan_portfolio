@@ -5,6 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Md Khalid Hasan | Materials Science Researcher</title>
 <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#111111">
 </head>
 
 <body>
@@ -186,3 +188,8 @@ window.onload = function() {
 <a href="contact.html" class="floating-contact">📧 Contact</a>
 </body>
 </html>
+<script>
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("sw.js");
+}
+</script>
