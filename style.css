@@ -491,3 +491,83 @@ body.dark-mode .dark-toggle {
     height: 145px;
   }
   }
+/* =========================
+   SAFE PREMIUM ANIMATIONS
+   No JavaScript needed
+========================= */
+
+.hero,
+.stat-card,
+.card,
+.highlight-card,
+research-card,
+.lab-card,
+.publication-card,
+.contact-card,
+.section-title {
+  animation: fadeUp 0.7s ease both;
+}
+
+.stat-card:nth-child(1),
+.card:nth-child(1),
+.highlight-card:nth-child(1) {
+  animation-delay: 0.05s;
+}
+
+.stat-card:nth-child(2),
+.card:nth-child(2),
+.highlight-card:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.stat-card:nth-child(3),
+.card:nth-child(3),
+.highlight-card:nth-child(3) {
+  animation-delay: 0.15s;
+}
+
+.stat-card:nth-child(4),
+.card:nth-child(4),
+.highlight-card:nth-child(4) {
+  animation-delay: 0.2s;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Smooth hover animation */
+.stat-card,
+.card,
+.highlight-card,
+.research-card,
+.lab-card,
+.publication-card,
+.contact-card,
+.btn,
+.sidebar a {
+  transition: all 0.25s ease;
+}
+
+/* Respect users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .hero,
+  .stat-card,
+  .card,
+  .highlight-card,
+  .research-card,
+  .lab-card,
+  .publication-card,
+  .contact-card,
+  .section-title {
+    animation: none;
+  }
+}
