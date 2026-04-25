@@ -571,3 +571,132 @@ research-card,
     animation: none;
   }
 }
+/* =====================================
+   SUPER PREMIUM HOMEPAGE UPGRADE
+===================================== */
+
+/* Luxury background depth */
+body {
+  background:
+    radial-gradient(circle at top right, rgba(59,130,246,0.06), transparent 30%),
+    radial-gradient(circle at bottom left, rgba(99,102,241,0.05), transparent 28%),
+    #f7f7f7;
+}
+
+/* Hero becomes elite glass card */
+.hero {
+  background: rgba(255,255,255,0.88);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(255,255,255,0.65);
+  box-shadow:
+    0 20px 45px rgba(0,0,0,0.08),
+    inset 0 1px 0 rgba(255,255,255,0.7);
+  position: relative;
+  overflow: hidden;
+}
+
+/* soft glow orb */
+.hero::after {
+  content: "";
+  position: absolute;
+  right: -80px;
+  top: -80px;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(59,130,246,0.16), transparent 65%);
+  pointer-events: none;
+}
+
+/* Better headline */
+.hero h1 {
+  letter-spacing: -1px;
+  font-weight: 800;
+}
+
+/* Better subtitle */
+.hero h3 {
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+/* Premium cards */
+.stat-card,
+.card,
+.highlight-card {
+  background: rgba(255,255,255,0.92);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.65);
+  box-shadow: 0 16px 30px rgba(0,0,0,0.05);
+}
+
+/* Floating hover */
+.stat-card:hover,
+.card:hover,
+.highlight-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 24px 42px rgba(0,0,0,0.10);
+}
+
+/* Premium buttons */
+.btn {
+  background: linear-gradient(135deg,#111827,#374151);
+  border: none;
+  box-shadow: 0 14px 28px rgba(17,24,39,0.18);
+}
+
+.btn:hover {
+  transform: translateY(-3px) scale(1.01);
+  box-shadow: 0 22px 36px rgba(17,24,39,0.24);
+}
+
+.secondary-btn {
+  background: rgba(255,255,255,0.85);
+  color: #111827;
+  border: 1px solid #d1d5db;
+}
+
+/* Sidebar premium */
+.sidebar {
+  background: rgba(255,255,255,0.88);
+  backdrop-filter: blur(16px);
+}
+
+.sidebar a {
+  border: 1px solid transparent;
+}
+
+.sidebar a:hover {
+  transform: translateX(4px);
+}
+
+.sidebar a.active {
+  box-shadow: 0 12px 24px rgba(17,24,39,0.18);
+}
+
+/* Dark mode luxury */
+body.dark-mode {
+  background:
+    radial-gradient(circle at top right, rgba(14,165,233,0.10), transparent 28%),
+    radial-gradient(circle at bottom left, rgba(59,130,246,0.08), transparent 28%),
+    #0b1120;
+}
+
+body.dark-mode .hero,
+body.dark-mode .stat-card,
+body.dark-mode .card,
+body.dark-mode .highlight-card,
+body.dark-mode .sidebar {
+  background: rgba(17,24,39,0.88);
+  border-color: rgba(255,255,255,0.08);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.35);
+}
+
+body.dark-mode .hero::after {
+  background: radial-gradient(circle, rgba(14,165,233,0.18), transparent 65%);
+}
+
+body.dark-mode .btn {
+  background: linear-gradient(135deg,#f8fafc,#cbd5e1);
+  color: #111827;
+}
