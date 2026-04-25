@@ -732,3 +732,114 @@ body.dark-mode .floating-contact {
   background: #f8fafc;
   color: #111827;
 }
+/* =========================
+   MOBILE PREMIUM OPTIMIZATION
+========================= */
+
+@media (max-width: 900px) {
+
+  body {
+    background: #f8f8f8;
+  }
+
+  .sidebar {
+    padding: 24px 18px;
+    text-align: center;
+  }
+
+  .profile {
+    width: 105px;
+    height: 105px;
+    margin-bottom: 12px;
+  }
+
+  .sidebar h2 {
+    font-size: 21px;
+  }
+
+  .sidebar p {
+    font-size: 13px;
+    margin-bottom: 20px;
+  }
+
+  .sidebar a {
+    display: inline-block;
+    width: auto;
+    margin: 5px 4px;
+    padding: 9px 13px;
+    font-size: 14px;
+  }
+
+  .dark-toggle {
+    max-width: 220px;
+    margin: 16px auto 0;
+    display: block;
+  }
+
+  .content {
+    padding: 22px 14px;
+  }
+
+  .hero {
+    padding: 26px 18px;
+    margin-bottom: 28px;
+    border-radius: 14px;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+    line-height: 1.18;
+  }
+
+  .hero h3 {
+    font-size: 18px;
+  }
+
+  .hero p {
+    font-size: 15.5px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .section-title {
+    margin: 34px 0 16px;
+  }
+
+  .section-title h2 {
+    font-size: 25px;
+  }
+
+  .stat-card,
+  .card,
+  .highlight-card,
+  .research-card,
+  .publication-card,
+  .contact-card {
+    padding: 20px;
+    border-radius: 12px;
+  }
+
+  .stat-card h2 {
+    font-size: 25px;
+  }
+
+  .lab-card img {
+    min-height: 200px;
+  }
+
+  .lab-card div {
+    padding: 20px;
+  }
+
+  .footer {
+    text-align: center;
+    font-size: 13px;
+  }
+}
