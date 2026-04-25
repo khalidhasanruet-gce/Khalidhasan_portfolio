@@ -843,3 +843,22 @@ body.dark-mode .floating-contact {
     font-size: 13px;
   }
 }
+/* Speed optimization */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+}
+
+.hero,
+.card,
+.stat-card,
+.highlight-card,
+.lab-card,
+.publication-card,
+.contact-card {
+  will-change: transform;
+}
