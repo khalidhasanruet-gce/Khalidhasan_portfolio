@@ -735,3 +735,32 @@ body.dark-mode .floating-contact {
     animation: none;
   }
 }
+/* FIXED SCROLLING LEFT SIDEBAR */
+.sidebar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 270px;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  z-index: 1000;
+}
+
+.content{
+  margin-left: 270px;
+}
+
+/* Mobile */
+@media (max-width: 900px){
+  .sidebar{
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: visible;
+  }
+
+  .content{
+    margin-left: 0;
+  }
+}
