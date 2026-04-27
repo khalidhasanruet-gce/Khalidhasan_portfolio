@@ -1070,3 +1070,14 @@ body.dark-mode .hero-glass-card p {
   background: rgba(255,255,255,0.08);
   color: #f8fafc;
 }
+/* JS reveal animation support */
+.reveal{
+  opacity:0;
+  transform:translateY(24px);
+  transition:all .7s ease;
+}
+
+.reveal-visible{
+  opacity:1;
+  transform:translateY(0);
+}
