@@ -20,7 +20,27 @@
 
 <body>
 
-<div class="sidebar">
+<header class="apple-navbar">
+  <div class="nav-brand">
+    <img src="profile-photo.png" class="nav-avatar" alt="Md Khalid Hasan">
+    <div>
+      <h2>Md Khalid Hasan</h2>
+      <p>Materials Science Researcher</p>
+    </div>
+  </div>
+
+  <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+  <nav class="apple-nav-links" id="mobileMenu">
+    <a href="index.html" class="active">Home</a>
+    <a href="about.html">About</a>
+    <a href="research.html">Research</a>
+    <a href="laboratory.html">Laboratory</a>
+    <a href="publications.html">Publications</a>
+    <a href="contact.html">Contact</a>
+    <button class="dark-toggle" onclick="toggleDarkMode()">🌙 Theme</button>
+  </nav>
+</header>
   <img src="profile-photo.png" class="profile" alt="Md Khalid Hasan">
   <h2>Md Khalid Hasan</h2>
   <p>Materials Science Researcher</p>
@@ -41,7 +61,39 @@
 
 <div class="content">
 
-  <section class="hero">
+  <section class="hero premium-hero">
+  <div class="hero-content">
+    <p class="eyebrow">Academic Portfolio</p>
+
+    <h1>
+      Materials Science Researcher Building Functional Materials for Future Technologies
+    </h1>
+
+    <h3>
+      Functional Oxides · ZnO Thin Films · Advanced Ceramics · Materials Characterization
+    </h3>
+
+    <p>
+      I am Md Khalid Hasan, a Materials Science graduate from RUET with peer-reviewed
+      publications and industrial R&D experience in ceramic materials, functional oxides,
+      thin films, XRD, SEM, XRF, thermal analysis, and process optimization.
+    </p>
+
+    <div class="hero-buttons">
+      <a href="Hasan_CV.pdf" class="btn" target="_blank">📄 Download CV</a>
+      <a href="research.html" class="btn secondary-btn">🔬 Explore Research</a>
+      <a href="contact.html" class="btn secondary-btn">📧 Contact Me</a>
+    </div>
+  </div>
+
+  <div class="hero-glass-card">
+    <h2>Research Focus</h2>
+    <p>Functional Oxides</p>
+    <p>ZnO Thin Films</p>
+    <p>Advanced Ceramics</p>
+    <p>Materials Characterization</p>
+  </div>
+  </section>
     <p class="eyebrow">Academic Portfolio</p>
 
     <h1>Materials Science Graduate with R&D Experience</h1>
