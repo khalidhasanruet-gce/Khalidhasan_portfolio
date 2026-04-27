@@ -872,3 +872,52 @@ body {
   font-size: 0.9rem;
   font-weight: 600;
 }
+/* FIX: make homepage content use full available width */
+.main,
+main,
+.content,
+.page-content {
+  width: calc(100% - 280px) !important;
+  max-width: none !important;
+  margin-left: 280px !important;
+  padding: 40px 60px !important;
+  box-sizing: border-box;
+}
+
+/* Make sections wider */
+section,
+.hero,
+.container,
+.wrapper {
+  max-width: 1200px !important;
+  width: 100% !important;
+}
+
+/* Fix card/grid layout */
+.grid,
+.cards,
+.feature-grid,
+.research-grid {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)) !important;
+  gap: 24px !important;
+  width: 100% !important;
+}
+
+/* Mobile fix */
+@media (max-width: 768px) {
+  .main,
+  main,
+  .content,
+  .page-content {
+    width: 100% !important;
+    margin-left: 0 !important;
+    padding: 24px 18px !important;
+  }
+
+  .sidebar,
+  aside {
+    position: relative !important;
+    width: 100% !important;
+  }
+}
