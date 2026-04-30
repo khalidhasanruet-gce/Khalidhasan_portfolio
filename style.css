@@ -949,3 +949,41 @@ body.dark-mode .secondary-btn {
   font-size: 40px;
   cursor: pointer;
 }
+.copy-btn {
+  margin-top: 12px;
+  padding: 8px 12px;
+  border: 1px solid #2563eb;
+  border-radius: 6px;
+  background: transparent;
+  color: #2563eb;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.copy-btn:hover {
+  background: #2563eb;
+  color: #fff;
+}
+
+.smart-floating-contact {
+  position: fixed;
+  right: 18px;
+  bottom: 20px;
+  display: flex;
+  gap: 10px;
+  z-index: 999;
+}
+
+.smart-floating-contact a {
+  background: #0f172a;
+  color: #fff;
+  padding: 12px;
+  border-radius: 50%;
+  font-size: 14px;
+  transition: 0.2s ease;
+}
+
+.smart-floating-contact a:hover {
+  background: #2563eb;
+}
