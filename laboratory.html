@@ -162,6 +162,30 @@ function toggleTheme(){
 }
 if(localStorage.getItem("theme")==="dark"){document.body.classList.add("dark-mode");}
 </script>
+<div id="imageModal" class="image-modal" onclick="closeImage()">
+  <span class="modal-close">&times;</span>
+  <img id="modalImage" class="modal-image">
+</div>
+</script>
+  </div>
+
+<!-- MODAL -->
+<div id="imageModal" class="image-modal" onclick="closeImage()">
+  <span class="modal-close">&times;</span>
+  <img id="modalImage" class="modal-image">
+</div>
+
+<!-- SCRIPT (THIS IS STEP 2) -->
+<script>
+function openImage(src) {
+  document.getElementById("imageModal").style.display = "flex";
+  document.getElementById("modalImage").src = src;
+}
+function closeImage() {
+  document.getElementById("imageModal").style.display = "none";
+}
+</script>
 
 </body>
+</html>
 </html>
