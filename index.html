@@ -14,241 +14,175 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Md Khalid Hasan | Materials Science Researcher</title>
-  <meta name="description" content="Md Khalid Hasan is a Materials Science researcher focused on functional oxides, ZnO thin films, advanced ceramics, materials characterization, and PhD-level research.">
+  <meta name="description" content="Md Khalid Hasan is a Materials Science researcher focused on functional oxides, ZnO thin films, advanced ceramics, characterization, and PhD-level research.">
 
-  <link rel="stylesheet" href="style.css?v=100">
-  <link rel="manifest" href="manifest.json">
-  <meta name="theme-color" content="#111111">
+  <link rel="stylesheet" href="style.css?v=200">
+  <meta name="theme-color" content="#0f172a">
 </head>
 
 <body>
 
-<header class="apple-navbar">
-  <div class="nav-brand">
-    <img src="profile-photo.png" class="nav-avatar" alt="Md Khalid Hasan">
+<header class="topbar">
+  <div class="brand">
+    <img src="profile-photo.png" alt="Md Khalid Hasan" class="brand-img">
     <div>
       <h2>Md Khalid Hasan</h2>
       <p>Materials Science Researcher</p>
     </div>
   </div>
 
-  <button class="menu-toggle">☰</button>
+  <button class="menu-btn" onclick="toggleMenu()">☰</button>
 
-  <nav class="apple-nav-links" id="mobileMenu">
+  <nav class="nav-links" id="navLinks">
     <a href="index.html" class="active">Home</a>
     <a href="about.html">About</a>
     <a href="research.html">Research</a>
     <a href="laboratory.html">Laboratory</a>
     <a href="publications.html">Publications</a>
     <a href="contact.html">Contact</a>
-    <button class="dark-toggle">🌙 Theme</button>
+    <button class="theme-btn" onclick="toggleTheme()">🌙 Theme</button>
   </nav>
 </header>
 
-<div class="content">
+<main>
 
-  <section class="hero premium-hero">
-    <div class="hero-content">
-      <p class="eyebrow">Academic Portfolio</p>
+<section class="hero">
+  <div class="hero-text">
+    <span class="badge">Academic Portfolio</span>
 
-      <h1>
-        Materials Science Researcher Focused on Functional Oxides, Thin Films, and Advanced Ceramics
-      </h1>
+    <h1>Materials Science Researcher in Functional Oxides, Thin Films & Advanced Ceramics</h1>
 
-      <h3>
-        Structure–Property Relationships · Materials Characterization · Industrial R&D
-      </h3>
+    <p class="hero-subtitle">
+      Exploring structure–property relationships through synthesis, processing,
+      characterization, and application-driven materials research.
+    </p>
 
-      <p>
-I am Md Khalid Hasan, a Materials Science graduate with peer-reviewed research experience, 
-laboratory characterization skills, and industrial R&D exposure. My work focuses on synthesis, 
-processing, and structure–property relationships of advanced materials for electronic, magnetic, 
-dielectric, and sustainable engineering applications.
-      </p>
-
-      <div class="hero-buttons">
-        <a href="Hasan_CV.pdf" class="btn" target="_blank">📄 Download CV</a>
-        <a href="research.html" class="btn secondary-btn">🔬 Explore Research</a>
-        <a href="contact.html" class="btn secondary-btn">📧 Contact Me</a>
-      </div>
+    <div class="hero-actions">
+      <a href="Hasan_CV.pdf" class="btn primary" target="_blank">Download CV</a>
+      <a href="research.html" class="btn secondary">Explore Research</a>
+      <a href="contact.html" class="btn secondary">Contact Me</a>
     </div>
+  </div>
 
-    <section class="research-focus-section">
-  <div class="research-focus-header">
-    <span class="section-label">Research Focus</span>
+  <div class="hero-card">
+    <h3>Research Identity</h3>
+    <p>Functional Oxides</p>
+    <p>ZnO Thin Films</p>
+    <p>Advanced Ceramics</p>
+    <p>Materials Characterization</p>
+  </div>
+</section>
+
+<section class="stats">
+  <div><h2>3.70</h2><p>CGPA / 4.00</p></div>
+  <div><h2>Top 5%</h2><p>Academic Standing</p></div>
+  <div><h2>5+</h2><p>Publications</p></div>
+  <div><h2>R&D</h2><p>Industrial Experience</p></div>
+</section>
+
+<section class="research-focus">
+  <div class="section-heading">
+    <span>Research Focus</span>
     <h2>Advanced Materials for Energy, Electronics & Functional Devices</h2>
     <p>
-      My research interests connect synthesis, processing, characterization, and structure–property
-      relationships of functional materials.
+      My interests connect synthesis, processing, characterization, and performance
+      optimization of functional materials.
     </p>
   </div>
 
-  <div class="research-focus-grid">
-
-    <div class="premium-focus-card">
-      <div class="focus-icon">⚛️</div>
+  <div class="focus-grid">
+    <div class="focus-card">
+      <div class="icon">⚛️</div>
       <h3>Functional Oxide Ceramics</h3>
       <p>Doping, defect chemistry, dielectric behavior, magnetic response, and multifunctional ceramic systems.</p>
     </div>
 
-    <div class="premium-focus-card">
-      <div class="focus-icon">🧪</div>
+    <div class="focus-card">
+      <div class="icon">🧪</div>
       <h3>Thin Films & Nanostructures</h3>
-      <p>ZnO-based thin films, bandgap tuning, microstructure control, and surface-dependent properties.</p>
+      <p>ZnO-based thin films, bandgap tuning, microstructure control, and optical/electronic properties.</p>
     </div>
 
-    <div class="premium-focus-card">
-      <div class="focus-icon">🔋</div>
+    <div class="focus-card">
+      <div class="icon">🔋</div>
       <h3>Energy Materials</h3>
-      <p>Materials for batteries, fuel cells, sustainable energy conversion, and advanced storage systems.</p>
+      <p>Materials for batteries, fuel cells, sustainable energy conversion, and storage technologies.</p>
     </div>
 
-    <div class="premium-focus-card">
-      <div class="focus-icon">🔬</div>
+    <div class="focus-card">
+      <div class="icon">🔬</div>
       <h3>Material Characterization</h3>
-      <p>XRD, SEM, spectroscopy, and analytical approaches for understanding structure–property relations.</p>
+      <p>XRD, SEM, spectroscopy, and analytical techniques for structure–property correlation.</p>
     </div>
-
   </div>
-    </section>
+</section>
 
-  <section class="stats-grid">
-    <div class="stat-card"><h2>3.70</h2><p>CGPA / 4.00</p></div>
-    <div class="stat-card"><h2>Top 5%</h2><p>Academic Standing</p></div>
-    <div class="stat-card"><h2>5+</h2><p>Peer-Reviewed Publications</p></div>
-    <div class="stat-card"><h2>R&D</h2><p>Industrial Experience</p></div>
-  </section>
-
-  <section class="section-title">
-    <h2>Research Identity</h2>
-    <p>A focused materials science profile built around experimental research, characterization, and application-driven innovation.</p>
-  </section>
-
-  <section class="cards">
-    <div class="card">
-      <h2>Functional Materials</h2>
-      <p>
-        Research interest in functional oxide ceramics, ZnO thin films,
-        dielectric materials, magnetic materials, and structure–property relationships.
-      </p>
-    </div>
-
-    <div class="card">
-      <h2>Characterization Driven</h2>
-      <p>
-        Strong background in XRD, SEM, XRF, thermal analysis, microscopy,
-        and scientific data interpretation.
-      </p>
-    </div>
-
-    <div class="card">
-      <h2>PhD Research Ready</h2>
-      <p>
-        Prepared for doctoral-level experimental research involving synthesis,
-        materials processing, characterization, and publication-oriented work.
-      </p>
-    </div>
-  </section>
-
-  <section class="section-title">
+<section class="cards-section">
+  <div class="section-heading left">
+    <span>Profile Strength</span>
     <h2>Why Work With Me?</h2>
-    <p>Key strengths for supervisors, collaborators, and research groups.</p>
-  </section>
-
-  <section class="cards">
-    <div class="card">
-      <h3>Research-Oriented Graduate</h3>
-<p>
-Experience contributing to peer-reviewed research in thin films, functional oxides, and ceramic materials.
-</p>
-    </div>
-
-    <div class="card">
-      <h2>Laboratory Ready</h2>
-      <p>
-        Practical exposure to materials characterization, ceramic processing,
-        experimental analysis, and technical documentation.
-      </p>
-    </div>
-
-    <div class="card">
-      <h2>Industrial Mindset</h2>
-      <p>
-        Industrial R&D experience in product improvement, process optimization,
-        defect analysis, and quality enhancement.
-      </p>
-    </div>
-  </section>
-
-  <section class="section-title">
-    <h2>Core Research Direction</h2>
-    <p>My work connects synthesis, characterization, and performance optimization of advanced materials.</p>
-  </section>
-
-  <section class="highlight-grid">
-    <div class="highlight-card">
-      <h2>Functional Oxides</h2>
-      <p>
-        BiFeO₃-based ceramics, multiferroic systems, dopant engineering,
-        and physical property tuning.
-      </p>
-      <a href="research.html">View Research</a>
-    </div>
-
-    <div class="highlight-card">
-      <h2>ZnO Thin Films</h2>
-      <p>
-        Spray-deposited doped ZnO films for optical band gap control
-        and magnetic response enhancement.
-      </p>
-      <a href="research.html">Explore Thin Films</a>
-    </div>
-
-    <div class="highlight-card">
-      <h2>Materials Characterization</h2>
-      <p>
-        XRD, SEM, XRF, thermal analysis, microstructure evaluation,
-        and data-driven interpretation.
-      </p>
-      <a href="laboratory.html">See Lab Skills</a>
-    </div>
-
-    <div class="highlight-card">
-      <h2>Publications</h2>
-      <p>
-        Selected journal and conference papers in materials science
-        with direct DOI/article links.
-      </p>
-      <a href="publications.html">Read Papers</a>
-    </div>
-  </section>
-
-  <section class="hero">
-    <p class="eyebrow">Open to Opportunities</p>
-
-    <h1>Available for PhD Positions, Research Assistantships, and International Collaboration</h1>
-
-    <p>
-      I am actively seeking doctoral research opportunities in advanced materials,
-      sustainable engineering, functional ceramics, nanotechnology, thin films,
-      and energy-related materials research.
-    </p>
-
-    <div class="hero-buttons">
-      <a href="contact.html" class="btn">📧 Contact for Research</a>
-      <a href="publications.html" class="btn secondary-btn">📄 View Publications</a>
-    </div>
-  </section>
-
-  <div class="footer">
-    <p>© 2026 Md Khalid Hasan · Materials Science & Engineering Portfolio</p>
   </div>
 
-</div>
+  <div class="cards-grid">
+    <div class="info-card">
+      <h3>Research-Oriented Graduate</h3>
+      <p>Experience contributing to peer-reviewed research in thin films, functional oxides, and ceramics.</p>
+    </div>
 
-<a href="contact.html" class="floating-contact">📧 Contact</a>
+    <div class="info-card">
+      <h3>Laboratory Ready</h3>
+      <p>Practical exposure to characterization, ceramic processing, experimental analysis, and documentation.</p>
+    </div>
 
-<script src="script.js?v=32"></script>
+    <div class="info-card">
+      <h3>Industrial Mindset</h3>
+      <p>Industrial R&D exposure in process improvement, quality enhancement, and technical problem solving.</p>
+    </div>
+  </div>
+</section>
+
+<section class="opportunity">
+  <span>Open to Opportunities</span>
+  <h2>Available for Funded PhD Positions, Research Assistantships & International Collaboration</h2>
+  <p>
+    I am actively seeking doctoral research opportunities in functional ceramics,
+    thin films, nanotechnology, sustainable engineering, and energy-related materials research.
+  </p>
+
+  <div class="hero-actions">
+    <a href="contact.html" class="btn primary">Contact for Research</a>
+    <a href="publications.html" class="btn secondary">View Publications</a>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <p>© 2026 Md Khalid Hasan · Materials Science Researcher</p>
+  <p>
+    <a href="research.html">Research</a> ·
+    <a href="laboratory.html">Laboratory</a> ·
+    <a href="publications.html">Publications</a> ·
+    <a href="contact.html">Contact</a>
+  </p>
+</footer>
+
+<a href="contact.html" class="floating-contact">Contact</a>
+
+<script>
+function toggleMenu() {
+  document.getElementById("navLinks").classList.toggle("show");
+}
+
+function toggleTheme() {
+  document.body.classList.toggle("dark-mode");
+  localStorage.setItem("theme", document.body.classList.contains("dark-mode") ? "dark" : "light");
+}
+
+if (localStorage.getItem("theme") === "dark") {
+  document.body.classList.add("dark-mode");
+}
+</script>
 
 </body>
 </html>
