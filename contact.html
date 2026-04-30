@@ -4,14 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact | Md Khalid Hasan</title>
-  <link rel="stylesheet" href="style.css?v=700">
+
+  <link rel="stylesheet" href="style.css?v=2500">
 </head>
 
 <body>
 
 <header class="apple-navbar">
   <div class="nav-brand">
-    <img src="profile-photo.png" class="nav-avatar" alt="Md Khalid Hasan">
+    <img src="profile-photo.png" class="nav-avatar">
     <div>
       <h2>Md Khalid Hasan</h2>
       <p>Materials Science Researcher</p>
@@ -27,76 +28,173 @@
     <a href="laboratory.html">Laboratory</a>
     <a href="publications.html">Publications</a>
     <a href="contact.html" class="active">Contact</a>
-    <button class="dark-toggle" onclick="toggleTheme()">🌙 Theme</button>
+    <button class="dark-toggle" onclick="toggleTheme()">🌙</button>
   </nav>
 </header>
 
 <div class="content">
 
-  <section class="premium-hero">
-    <div class="hero-content">
-      <p class="eyebrow">Contact</p>
-      <h1>Open to Research Collaboration, PhD Opportunities & Academic Networking</h1>
-      <h3>Let’s connect for research, collaboration, and graduate study opportunities.</h3>
-      <p>
-        I welcome communication from supervisors, researchers, collaborators,
-        and academic groups working in materials science and engineering.
-      </p>
+<!-- HERO -->
+<section class="premium-hero">
+  <div class="hero-content">
+    <p class="eyebrow">Contact</p>
+
+    <h1>Let’s Connect for Research & Collaboration</h1>
+
+    <h3>Open to PhD opportunities, research collaboration, and academic communication</h3>
+
+    <p>
+      I welcome communication from professors, research groups, and institutions
+      working in materials science, functional oxides, thin films, ceramics,
+      and advanced characterization.
+    </p>
+
+    <!-- SMART BUTTONS -->
+    <div class="hero-buttons">
+
+      <a href="mailto:khalidhasan.ruet@gmail.com" class="btn">
+        📧 Email
+      </a>
+
+      <a href="https://scholar.google.com/citations?hl=en&user=NjS-Vi4AAAAJ" target="_blank" class="btn secondary-btn">
+        🎓 Scholar
+      </a>
+
+      <a href="https://www.linkedin.com/in/hasankhalidruet" target="_blank" class="btn secondary-btn">
+        🔗 LinkedIn
+      </a>
+
     </div>
-
-    <div class="hero-glass-card">
-      <h2>Available For</h2>
-      <p>PhD Positions</p>
-      <p>Research Assistantships</p>
-      <p>Collaboration</p>
-      <p>Academic Networking</p>
-    </div>
-  </section>
-
-  <section class="section-title">
-    <h2>Contact Links</h2>
-    <p>Reach me through academic and professional platforms.</p>
-  </section>
-
-  <section class="contact-grid">
-    <div class="contact-card">
-      <h2>Email</h2>
-      <p>Add your academic email address here.</p>
-      <a href="mailto:your-email@example.com">Send Email</a>
-    </div>
-
-    <div class="contact-card">
-      <h2>Google Scholar</h2>
-      <p>View publications and citation profile.</p>
-      <a href="https://scholar.google.com/citations?user=NjS-Vi4AAAAJ&hl=en" target="_blank">Google Scholar</a>
-    </div>
-
-    <div class="contact-card">
-      <h2>LinkedIn</h2>
-      <p>Connect professionally for research and academic networking.</p>
-      <a href="#" target="_blank">LinkedIn</a>
-    </div>
-
-    <div class="contact-card">
-      <h2>Location</h2>
-      <p>Bangladesh · Open to international research opportunities.</p>
-      <a href="research.html">View Research</a>
-    </div>
-  </section>
-
-  <div class="footer">
-    <p>© 2026 Md Khalid Hasan · Materials Science Researcher</p>
   </div>
+
+  <div class="hero-glass-card">
+    <h2>Available For</h2>
+    <p>Funded PhD Positions</p>
+    <p>Research Collaboration</p>
+    <p>Academic Networking</p>
+    <p>Materials R&D</p>
+  </div>
+</section>
+
+<!-- CONTACT INFO -->
+<section class="section-title">
+  <h2>Contact Information</h2>
+  <p>Professional communication channels</p>
+</section>
+
+<section class="contact-grid">
+
+  <!-- EMAIL -->
+  <div class="contact-card">
+    <h2>📧 Email</h2>
+    <p>Primary academic contact</p>
+
+    <a href="mailto:khalidhasan.ruet@gmail.com">
+      khalidhasan.ruet@gmail.com
+    </a>
+
+    <button class="copy-btn" onclick="copyEmail()">
+      Copy Email
+    </button>
+  </div>
+
+  <!-- LINKEDIN -->
+  <div class="contact-card">
+    <h2>🔗 LinkedIn</h2>
+    <p>Professional networking and academic connections</p>
+
+    <a href="https://www.linkedin.com/in/hasankhalidruet" target="_blank">
+      linkedin.com/in/hasankhalidruet
+    </a>
+  </div>
+
+  <!-- ORCID -->
+  <div class="contact-card">
+    <h2>🆔 ORCID</h2>
+    <p>Researcher identity and publication record</p>
+
+    <a href="https://orcid.org/0000-0002-5646-9129" target="_blank">
+      orcid.org/0000-0002-5646-9129
+    </a>
+  </div>
+
+  <!-- SCHOLAR -->
+  <div class="contact-card">
+    <h2>🎓 Google Scholar</h2>
+    <p>Publications and citation profile</p>
+
+    <a href="https://scholar.google.com/citations?hl=en&user=NjS-Vi4AAAAJ" target="_blank">
+      View Profile
+    </a>
+  </div>
+
+  <!-- LOCATION -->
+  <div class="contact-card">
+    <h2>📍 Location</h2>
+    <p>27/4, North Pirerbagh, Mirpur 60 ft, Dhaka-1216, Bangladesh</p>
+
+    <a href="https://www.google.com/maps/search/North+Pirerbagh+Dhaka" target="_blank">
+      View Map
+    </a>
+  </div>
+
+</section>
+
+<!-- PROFILE -->
+<section class="section-title">
+  <h2>Professional Profile</h2>
+</section>
+
+<section class="cards">
+
+  <div class="card">
+    <h2>Materials Researcher</h2>
+    <p>Functional oxides, ZnO thin films, ceramic materials</p>
+  </div>
+
+  <div class="card">
+    <h2>Experimental Focus</h2>
+    <p>XRD, SEM, materials processing and characterization</p>
+  </div>
+
+  <div class="card">
+    <h2>PhD Goal</h2>
+    <p>Advanced materials, nanotechnology, energy materials</p>
+  </div>
+
+</section>
+
+<div class="footer">
+  <p>© 2026 Md Khalid Hasan · Materials Science Researcher</p>
+</div>
 
 </div>
 
+<!-- FLOATING SMART CONTACT -->
+<div class="smart-floating-contact">
+  <a href="mailto:khalidhasan.ruet@gmail.com">📧</a>
+  <a href="https://www.linkedin.com/in/hasankhalidruet" target="_blank">🔗</a>
+</div>
+
 <script>
-function toggleMenu(){document.getElementById("mobileMenu").classList.toggle("show");}
+function toggleMenu(){
+  document.getElementById("mobileMenu").classList.toggle("show");
+}
+
 function toggleTheme(){
   document.body.classList.toggle("dark-mode");
   localStorage.setItem("theme", document.body.classList.contains("dark-mode") ? "dark" : "light");
 }
-if(localStorage.getItem("theme")==="dark"){document.body.classList.add("dark-mode");}
+
+if(localStorage.getItem("theme")==="dark"){
+  document.body.classList.add("dark-mode");
+}
+
+/* COPY EMAIL */
+function copyEmail(){
+  navigator.clipboard.writeText("khalidhasan.ruet@gmail.com");
+  alert("Email copied!");
+}
 </script>
 
 </body>
