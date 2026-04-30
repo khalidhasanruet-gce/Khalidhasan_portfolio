@@ -987,3 +987,25 @@ body.dark-mode .secondary-btn {
 .smart-floating-contact a:hover {
   background: #2563eb;
    }
+/* =========================
+   PUBLICATION TITLE FIX (CRITICAL)
+========================= */
+
+/* FORCE LIGHT MODE TITLE COLOR */
+.publication-card h2 {
+  color: #111827 !important;
+}
+
+/* FORCE PARAGRAPH COLOR */
+.publication-card p {
+  color: #4b5563 !important;
+}
+
+/* DARK MODE SAFE */
+body.dark-mode .publication-card h2 {
+  color: #f9fafb !important;
+}
+
+body.dark-mode .publication-card p {
+  color: #cbd5e1 !important;
+}
