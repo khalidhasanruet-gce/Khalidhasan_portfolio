@@ -5,12 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Laboratory | Md Khalid Hasan</title>
 
-  <link rel="stylesheet" href="style.css?v=1000">
+  <link rel="stylesheet" href="style.css?v=1100">
 </head>
 
 <body>
 
-<!-- NAVBAR -->
 <header class="apple-navbar">
   <div class="nav-brand">
     <img src="profile-photo.png" class="nav-avatar">
@@ -42,11 +41,11 @@
 
     <h1>Materials Processing, Characterization & Experimental Analysis</h1>
 
-    <h3>Hands-on experience in experimental materials research and analytical techniques</h3>
+    <h3>Hands-on experience in advanced materials laboratory techniques</h3>
 
     <p>
-      My laboratory background includes ceramic processing, sample preparation,
-      microstructural analysis, and characterization-based interpretation.
+      My laboratory work includes characterization techniques, ceramic processing,
+      thermal analysis, microscopy, and experimental materials testing.
     </p>
   </div>
 
@@ -54,8 +53,8 @@
     <h2>Core Skills</h2>
     <p>XRD</p>
     <p>SEM</p>
-    <p>Ceramic Processing</p>
-    <p>Data Analysis</p>
+    <p>XRF</p>
+    <p>Thermal Analysis</p>
   </div>
 </section>
 
@@ -70,49 +69,41 @@
   <div class="research-focus-grid">
 
     <div class="premium-focus-card" onclick="openImage('lab_xrd_cme.jpg')">
-      <div class="focus-icon">🔬</div>
       <h3>XRD</h3>
-      <p>Phase and structural analysis</p>
+      <p>Structural and phase analysis</p>
     </div>
 
     <div class="premium-focus-card" onclick="openImage('lab_xrf_cme.png')">
-      <div class="focus-icon">⚛️</div>
       <h3>XRF</h3>
       <p>Elemental composition analysis</p>
     </div>
 
     <div class="premium-focus-card" onclick="openImage('lab_sem_cme.jpg')">
-      <div class="focus-icon">🧪</div>
       <h3>SEM</h3>
-      <p>Microstructure and morphology</p>
+      <p>Microstructure analysis</p>
     </div>
 
     <div class="premium-focus-card" onclick="openImage('lab_thermal_cme.png')">
-      <div class="focus-icon">🌡️</div>
       <h3>Thermal</h3>
-      <p>Thermal behavior analysis</p>
+      <p>Thermal behavior study</p>
     </div>
 
     <div class="premium-focus-card" onclick="openImage('lab_microscopy_cme.jpg')">
-      <div class="focus-icon">🔍</div>
       <h3>Microscopy</h3>
       <p>Microstructure observation</p>
     </div>
 
     <div class="premium-focus-card" onclick="openImage('lab_furnace_cme.jpg')">
-      <div class="focus-icon">🔥</div>
       <h3>Furnace</h3>
-      <p>High temperature processing</p>
+      <p>High-temperature processing</p>
     </div>
 
     <div class="premium-focus-card" onclick="openImage('lab_testing.jpg')">
-      <div class="focus-icon">🧾</div>
       <h3>Lab Testing</h3>
       <p>Experimental workflow</p>
     </div>
 
     <div class="premium-focus-card" onclick="openImage('lab_materials_cme.jpg')">
-      <div class="focus-icon">🧱</div>
       <h3>Materials</h3>
       <p>Sample preparation</p>
     </div>
@@ -120,38 +111,75 @@
   </div>
 </section>
 
-<!-- EXPERIENCE SECTION -->
+<!-- FULL LAB IMAGE CARDS -->
 <section class="section-title">
   <h2>Laboratory & Characterization Experience</h2>
-  <p>Experimental skills supporting advanced materials research</p>
+  <p>Real laboratory exposure with visual evidence</p>
 </section>
 
 <section class="lab-grid">
 
   <div class="lab-card">
-    <img src="lab_materials_cme.jpg">
+    <img src="lab_xrd_cme.jpg">
     <div>
-      <h2>Materials Characterization</h2>
-      <p>XRD, SEM, microscopy and analytical tools</p>
-      <span>Characterization</span>
+      <h2>XRD Analysis</h2>
+      <p>Crystallographic phase and structural analysis</p>
+    </div>
+  </div>
+
+  <div class="lab-card">
+    <img src="lab_xrf_cme.png">
+    <div>
+      <h2>XRF Analysis</h2>
+      <p>Elemental composition characterization</p>
+    </div>
+  </div>
+
+  <div class="lab-card">
+    <img src="lab_sem_cme.jpg">
+    <div>
+      <h2>SEM Imaging</h2>
+      <p>Microstructure and morphology analysis</p>
+    </div>
+  </div>
+
+  <div class="lab-card">
+    <img src="lab_thermal_cme.png">
+    <div>
+      <h2>Thermal Analysis</h2>
+      <p>Thermal stability and phase transition study</p>
+    </div>
+  </div>
+
+  <div class="lab-card">
+    <img src="lab_microscopy_cme.jpg">
+    <div>
+      <h2>Microscopy</h2>
+      <p>Microstructure observation</p>
     </div>
   </div>
 
   <div class="lab-card">
     <img src="lab_furnace_cme.jpg">
     <div>
-      <h2>Ceramic Processing</h2>
-      <p>Mixing, forming, sintering</p>
-      <span>Processing</span>
+      <h2>Furnace Processing</h2>
+      <p>Sintering and high-temperature treatment</p>
     </div>
   </div>
 
   <div class="lab-card">
     <img src="lab_testing.jpg">
     <div>
-      <h2>Research Analysis</h2>
-      <p>Data interpretation and validation</p>
-      <span>Analysis</span>
+      <h2>Lab Testing</h2>
+      <p>Experimental setup and analysis</p>
+    </div>
+  </div>
+
+  <div class="lab-card">
+    <img src="lab_materials_cme.jpg">
+    <div>
+      <h2>Materials Handling</h2>
+      <p>Sample preparation and processing</p>
     </div>
   </div>
 
@@ -163,13 +191,12 @@
 
 </div>
 
-<!-- MODAL -->
+<!-- IMAGE MODAL -->
 <div id="imageModal" class="image-modal" onclick="closeImage()">
   <span class="modal-close">&times;</span>
   <img id="modalImage" class="modal-image">
 </div>
 
-<!-- SCRIPT -->
 <script>
 function toggleMenu(){
   document.getElementById("mobileMenu").classList.toggle("show");
