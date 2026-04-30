@@ -213,3 +213,195 @@ body.dark-mode .contact-card p {
     padding: 22px;
   }
 }
+/* =========================
+   LEVEL 3 ULTRA ELITE EFFECTS
+========================= */
+
+/* Premium font rendering */
+body {
+  letter-spacing: -0.01em;
+}
+
+/* Smooth page entry */
+.content {
+  animation: pageFade 0.9s ease both;
+}
+
+@keyframes pageFade {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Elite navbar shine */
+.apple-navbar::after {
+  content: "";
+  position: absolute;
+  left: 7%;
+  right: 7%;
+  bottom: 0;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(37, 99, 235, 0.45),
+    transparent
+  );
+}
+
+/* Hero luxury glow */
+.premium-hero {
+  isolation: isolate;
+}
+
+.premium-hero::before {
+  animation: eliteGlow 8s ease-in-out infinite alternate;
+}
+
+@keyframes eliteGlow {
+  from {
+    transform: scale(1) rotate(0deg);
+    opacity: 0.75;
+  }
+  to {
+    transform: scale(1.12) rotate(8deg);
+    opacity: 1;
+  }
+}
+
+/* Hero text premium gradient movement */
+.premium-hero h1 {
+  background-size: 220% auto;
+  animation: textShine 6s linear infinite;
+}
+
+@keyframes textShine {
+  0% {
+    background-position: 0% center;
+  }
+  100% {
+    background-position: 220% center;
+  }
+}
+
+/* Glass card magnetic feel */
+.hero-glass-card,
+.premium-focus-card,
+.card,
+.stat-card,
+.highlight-card {
+  transform-style: preserve-3d;
+}
+
+.hero-glass-card:hover,
+.premium-focus-card:hover,
+.card:hover,
+.stat-card:hover,
+.highlight-card:hover {
+  transform: translateY(-10px) scale(1.015);
+}
+
+/* Card top light line */
+.premium-focus-card::before,
+.card::before,
+.stat-card::before,
+.highlight-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      120deg,
+      transparent 0%,
+      rgba(255,255,255,0.55) 40%,
+      transparent 70%
+    );
+  opacity: 0;
+  transition: 0.45s ease;
+}
+
+.premium-focus-card:hover::before,
+.card:hover::before,
+.stat-card:hover::before,
+.highlight-card:hover::before {
+  opacity: 1;
+}
+
+/* Premium buttons */
+.btn {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -120%;
+  width: 80%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255,255,255,0.35),
+    transparent
+  );
+  transition: 0.5s ease;
+}
+
+.btn:hover::after {
+  left: 120%;
+}
+
+/* Floating contact pulse */
+.floating-contact {
+  animation: contactPulse 2.6s ease-in-out infinite;
+}
+
+@keyframes contactPulse {
+  0%, 100% {
+    box-shadow: 0 20px 45px rgba(15,23,42,0.30);
+  }
+  50% {
+    box-shadow: 0 24px 60px rgba(37,99,235,0.45);
+  }
+}
+
+/* Section title premium */
+.section-title h2 {
+  background: linear-gradient(135deg, #020617, #2563eb, #0891b2);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Mobile polish */
+@media (max-width: 900px) {
+  .premium-hero {
+    box-shadow: 0 24px 70px rgba(15,23,42,0.13);
+  }
+
+  .premium-hero h1 {
+    line-height: 1.05;
+  }
+
+  .hero-glass-card,
+  .premium-focus-card,
+  .card,
+  .stat-card {
+    transform: none;
+  }
+}
+
+/* Reduced motion safety */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
