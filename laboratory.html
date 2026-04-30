@@ -1,20 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1Z87PEDCVF"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-1Z87PEDCVF');
-  </script>
-
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Laboratory | Md Khalid Hasan</title>
-  <link rel="stylesheet" href="style.css?v=301">
-  <meta name="theme-color" content="#111111">
+  <link rel="stylesheet" href="style.css?v=700">
 </head>
 
 <body>
@@ -28,7 +18,7 @@
     </div>
   </div>
 
-  <button class="menu-toggle">☰</button>
+  <button class="menu-toggle" onclick="toggleMenu()">☰</button>
 
   <nav class="apple-nav-links" id="mobileMenu">
     <a href="index.html">Home</a>
@@ -37,122 +27,82 @@
     <a href="laboratory.html" class="active">Laboratory</a>
     <a href="publications.html">Publications</a>
     <a href="contact.html">Contact</a>
-    <button class="dark-toggle">🌙 Theme</button>
+    <button class="dark-toggle" onclick="toggleTheme()">🌙 Theme</button>
   </nav>
 </header>
 
 <div class="content">
 
-  <section class="hero">
-    <p class="eyebrow">Laboratory Experience</p>
-    <h1>Materials Characterization & Processing</h1>
-    <h3>Hands-on Skills in Analysis, Fabrication & Industrial R&D</h3>
+  <section class="premium-hero">
+    <div class="hero-content">
+      <p class="eyebrow">Laboratory Skills</p>
+      <h1>Materials Processing, Characterization & Experimental Analysis</h1>
+      <h3>Hands-on experience with experimental materials research and analytical techniques.</h3>
+      <p>
+        My laboratory background includes ceramic processing, sample preparation,
+        microstructural analysis, and characterization-based interpretation.
+      </p>
+    </div>
 
-    <p>
-      My laboratory experience combines academic research training and industrial
-      practice in ceramics, thin films, oxide materials, quality control, thermal
-      systems, and advanced materials testing.
-    </p>
-  </section>
-
-  <section class="stats-grid">
-    <div class="stat-card"><h2>XRD</h2><p>Crystal Analysis</p></div>
-    <div class="stat-card"><h2>SEM</h2><p>Microstructure</p></div>
-    <div class="stat-card"><h2>XRF</h2><p>Composition</p></div>
-    <div class="stat-card"><h2>R&D</h2><p>Industry Practice</p></div>
+    <div class="hero-glass-card">
+      <h2>Core Skills</h2>
+      <p>XRD</p>
+      <p>SEM</p>
+      <p>Ceramic Processing</p>
+      <p>Data Analysis</p>
+    </div>
   </section>
 
   <section class="section-title">
-    <h2>Characterization Equipment</h2>
-    <p>Technical tools used for understanding material structure and performance.</p>
+    <h2>Laboratory & Characterization Experience</h2>
+    <p>Experimental skills supporting advanced materials research.</p>
   </section>
 
   <section class="lab-grid">
-
     <div class="lab-card">
-      <img src="lab_xrd_cme.jpg" alt="XRD equipment">
+      <img src="lab1.jpg" alt="Materials Laboratory">
       <div>
-        <h2>X-Ray Diffraction (XRD)</h2>
-        <p>Used for phase identification, crystal structure study, peak shifting, and lattice parameter analysis.</p>
-        <span>Phase Analysis · Structure</span>
+        <h2>Materials Characterization</h2>
+        <p>XRD, SEM, microscopy, and related analytical tools for phase, morphology, and structure analysis.</p>
+        <span>Characterization</span>
       </div>
     </div>
 
     <div class="lab-card">
-      <img src="lab_sem_cme.jpg" alt="SEM equipment">
+      <img src="lab2.jpg" alt="Ceramic Processing">
       <div>
-        <h2>Scanning Electron Microscopy (SEM)</h2>
-        <p>Applied for morphology observation, grain size study, fracture analysis, and particle distribution.</p>
-        <span>Microstructure · Imaging</span>
+        <h2>Ceramic Processing</h2>
+        <p>Powder processing, mixing, forming, sintering, and experimental preparation of ceramic materials.</p>
+        <span>Processing</span>
       </div>
     </div>
 
     <div class="lab-card">
-      <img src="lab_xrf_cme.png" alt="XRF equipment">
+      <img src="lab3.jpg" alt="Research Analysis">
       <div>
-        <h2>X-Ray Fluorescence (XRF)</h2>
-        <p>Used for elemental and oxide composition testing of raw materials and research samples.</p>
-        <span>Composition · Quality</span>
+        <h2>Research Data Analysis</h2>
+        <p>Interpreting microstructure, phase evolution, and material performance through experimental data.</p>
+        <span>Analysis</span>
       </div>
     </div>
-
-    <div class="lab-card">
-      <img src="lab_thermal_cme.png" alt="Thermal analysis equipment">
-      <div>
-        <h2>Thermal Analysis</h2>
-        <p>Studied decomposition behavior, firing response, heat stability, and temperature-dependent changes.</p>
-        <span>TGA · DSC · Stability</span>
-      </div>
-    </div>
-
-  </section>
-
-  <section class="section-title">
-    <h2>Processing & Industrial Skills</h2>
-    <p>Practical experience developed through research and manufacturing environments.</p>
-  </section>
-
-  <section class="cards">
-
-    <div class="card">
-      <h2>Powder Processing</h2>
-      <p>Mixing, weighing, formulation control, and batch consistency.</p>
-    </div>
-
-    <div class="card">
-      <h2>Sintering</h2>
-      <p>Calcination, furnace scheduling, densification, and heat treatment control.</p>
-    </div>
-
-    <div class="card">
-      <h2>Defect Reduction</h2>
-      <p>Crack control, warpage reduction, glaze issues, and yield improvement.</p>
-    </div>
-
-    <div class="card">
-      <h2>Software Tools</h2>
-      <p>FullProf, HighScore Plus, OriginPro, ImageJ, MS Office.</p>
-    </div>
-
-    <div class="card">
-      <h2>Documentation</h2>
-      <p>Lab reports, technical summaries, and data presentation.</p>
-    </div>
-
-    <div class="card">
-      <h2>Industrial R&D</h2>
-      <p>Product improvement, process optimization, and quality enhancement.</p>
-    </div>
-
   </section>
 
   <div class="footer">
-    <p>© 2026 Md Khalid Hasan · Laboratory Portfolio</p>
+    <p>© 2026 Md Khalid Hasan · Materials Science Researcher</p>
   </div>
 
 </div>
 
-<script src="script.js?v=31"></script>
+<a href="contact.html" class="floating-contact">📧 Contact</a>
+
+<script>
+function toggleMenu(){document.getElementById("mobileMenu").classList.toggle("show");}
+function toggleTheme(){
+  document.body.classList.toggle("dark-mode");
+  localStorage.setItem("theme", document.body.classList.contains("dark-mode") ? "dark" : "light");
+}
+if(localStorage.getItem("theme")==="dark"){document.body.classList.add("dark-mode");}
+</script>
 
 </body>
 </html>
