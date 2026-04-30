@@ -1009,3 +1009,32 @@ body.dark-mode .publication-card h2 {
 body.dark-mode .publication-card p {
   color: #cbd5e1 !important;
 }
+/* =========================
+   FINAL PUBLICATION LIGHT MODE FIX
+========================= */
+
+body:not(.dark-mode) .publication-card {
+  background: #ffffff !important;
+  border: 1px solid #e5e7eb !important;
+  border-left: 4px solid #2563eb !important;
+}
+
+body:not(.dark-mode) .publication-card h2 {
+  color: #111827 !important;
+}
+
+body:not(.dark-mode) .publication-card p,
+body:not(.dark-mode) .publication-card strong {
+  color: #4b5563 !important;
+}
+
+body:not(.dark-mode) .pub-links a {
+  color: #2563eb !important;
+  border: 1px solid #2563eb !important;
+  background: transparent !important;
+}
+
+body:not(.dark-mode) .pub-links a:hover {
+  background: #2563eb !important;
+  color: #ffffff !important;
+}
